@@ -74,7 +74,7 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-13.5 flex flex-wrap justify-between gap-3 border-t border-line-soft pt-6.5 text-[12.5px] text-ink-faint">
+        <div className="md:mt-13.5 mt-4 flex flex-wrap justify-between gap-3 border-t border-line-soft pt-6.5 text-[12.5px] text-ink-faint">
           <span>&copy; {site.name}. All Rights Reserved.</span>
           <nav className="flex flex-wrap gap-5.5">
             {footerNavItems.map((item) =>

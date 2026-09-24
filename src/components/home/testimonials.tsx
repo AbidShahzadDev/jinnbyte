@@ -90,7 +90,7 @@ export function Testimonials({ sectionClassName }: { sectionClassName?: string }
     <section
       id="testimonials"
       className={cn(
-        "relative overflow-hidden bg-[#1c1c1c] bg-[linear-gradient(100deg,#163336_0%,#1a1a1a_8%,#1c1c1c_72%,#1a1a1a_92%,#163336_100%)] py-[clamp(96px,9vh,140px)]",
+        "relative overflow-hidden bg-[#1c1c1c] bg-[linear-gradient(100deg,#163336_0%,#1a1a1a_8%,#1c1c1c_72%,#1a1a1a_92%,#163336_100%)] md:py-[clamp(96px,9vh,140px)] py-10",
         sectionClassName
       )}
     >

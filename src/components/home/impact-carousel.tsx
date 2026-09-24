@@ -148,7 +148,7 @@ export function ImpactCarousel({
     <section
       id="portfolio"
       className={cn(
-        "dot-field relative overflow-hidden bg-paper py-[clamp(96px,9vh,140px)]",
+        "dot-field relative overflow-hidden bg-paper md:py-[clamp(96px,9vh,140px)] py-10",
         sectionClassName,
       )}
     >
@@ -167,7 +167,7 @@ export function ImpactCarousel({
               <h2 className="text-[clamp(28px,4vw,50px)] font-extralight leading-[1.08] tracking-[-0.03em] max-[620px]:whitespace-normal min-[621px]:whitespace-nowrap">
                 {impact.title}
               </h2>
-              <div className="flex justify-between items-end gap-5.5 w-full min-w-full">
+              <div className="block md:flex justify-between items-end gap-5.5 w-full min-w-full">
                 <p className="mt-4 max-w-[54ch] text-[15.5px] text-ink-soft">
                   {impact.lede}
                 </p>

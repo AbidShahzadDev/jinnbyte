@@ -140,7 +140,7 @@ export function SolutionsGrid({
                   />
                 </span>
 
-                <h3 className="relative z-[2] m-0 max-w-[15ch] text-[clamp(16px,min(1.42vw,2.2vh),20px)] font-normal leading-[1.27] tracking-[-0.015em] transition-colors duration-450 ease-brand group-hover:text-white">
+                <h3 className="relative z-[2] m-0 max-w-[15ch] text-[clamp(16px,min(1.42vw,2.2vh),20px)] font-normal leading-[1.27] tracking-[-0.015em] transition-colors duration-450 ease-brand group-hover:text-white md:mt-0 mt-6">
                   {card.title}
                 </h3>
 

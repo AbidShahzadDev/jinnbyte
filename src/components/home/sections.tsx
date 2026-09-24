@@ -73,12 +73,12 @@ export function AtAGlance() {
       <Container>
         <div
           className={cn(
-            "relative left-1/2 w-screen -translate-x-1/2 overflow-hidden pt-[clamp(124px,15vh,180px)]",
+            "relative left-1/2 w-screen -translate-x-1/2 overflow-hidden md:pt-[clamp(124px,15vh,180px)] pt-10",
             DARK_GRADIENT,
             BLEED_PADDING
           )}
         >
-          <div className="grid items-center gap-[clamp(52px,5.8vw,92px)] pb-[clamp(155px,21vh,230px)] lg:grid-cols-[1.08fr_0.92fr]">
+          <div className="grid items-center gap-[clamp(52px,5.8vw,92px)] md:pb-[clamp(155px,21vh,230px)] pb-10 lg:grid-cols-[1.08fr_0.92fr]">
             <Reveal>
               <SectionKicker onDark className="mb-5.5">
                 {glance.kicker}
@@ -110,7 +110,7 @@ export function AtAGlance() {
           {/* Notched offices panel, a step lighter than the band behind it. */}
           <Reveal
             className={cn(
-              "relative left-1/2 w-screen -translate-x-1/2 bg-[#2A2A2A] pt-[clamp(134px,16vh,185px)] pb-[clamp(100px,12vh,145px)]",
+              "relative left-1/2 w-screen -translate-x-1/2 bg-[#2A2A2A] md:pt-[clamp(134px,16vh,185px)] pt-10 md:pb-[clamp(100px,12vh,145px)] pb-10",
               BLEED_PADDING,
               "min-[821px]:[clip-path:polygon(0_46px,26%_46px,calc(26%+92px)_0,100%_0,100%_100%,0_100%)]"
             )}
