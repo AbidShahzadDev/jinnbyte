@@ -1,0 +1,2074 @@
+{
+  "assets": [
+    {
+      "file": "/images/sc-orn-o1.png",
+      "hash": "a1ed105b",
+      "mime": "image/png",
+      "kb": 168,
+      "kind": "css",
+      "labels": [
+        "sc-orn-o1"
+      ],
+      "pages": [
+        "index",
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/sc-orn-o6.png",
+      "hash": "fdade5e5",
+      "mime": "image/png",
+      "kb": 157.8,
+      "kind": "css",
+      "labels": [
+        "sc-orn-o6"
+      ],
+      "pages": [
+        "index",
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/sc-orn-o4.png",
+      "hash": "882fa07a",
+      "mime": "image/png",
+      "kb": 142.9,
+      "kind": "css",
+      "labels": [
+        "sc-orn-o4"
+      ],
+      "pages": [
+        "index",
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/sc-orn-o2.png",
+      "hash": "d7660b7f",
+      "mime": "image/png",
+      "kb": 138,
+      "kind": "css",
+      "labels": [
+        "sc-orn-o2"
+      ],
+      "pages": [
+        "index",
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/sc-orn-o7.png",
+      "hash": "b086e2e7",
+      "mime": "image/png",
+      "kb": 131.1,
+      "kind": "css",
+      "labels": [
+        "sc-orn-o7"
+      ],
+      "pages": [
+        "index",
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/sc-orn-o5.png",
+      "hash": "717787ee",
+      "mime": "image/png",
+      "kb": 129.7,
+      "kind": "css",
+      "labels": [
+        "sc-orn-o5"
+      ],
+      "pages": [
+        "index",
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/sc-orn-o3.png",
+      "hash": "8849b5a8",
+      "mime": "image/png",
+      "kb": 127.9,
+      "kind": "css",
+      "labels": [
+        "sc-orn-o3"
+      ],
+      "pages": [
+        "index",
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/the-jinnbyte-office.jpg",
+      "hash": "b3b841eb",
+      "mime": "image/jpeg",
+      "kb": 125,
+      "kind": "img",
+      "labels": [
+        "the-jinnbyte-office"
+      ],
+      "pages": [
+        "company-about"
+      ]
+    },
+    {
+      "file": "/images/sc-orn-o8.png",
+      "hash": "a4c9d25c",
+      "mime": "image/png",
+      "kb": 120.1,
+      "kind": "css",
+      "labels": [
+        "sc-orn-o8"
+      ],
+      "pages": [
+        "index",
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/about-problems.jpg",
+      "hash": "93dd29b0",
+      "mime": "image/jpeg",
+      "kb": 92.8,
+      "kind": "css",
+      "labels": [
+        "about-problems"
+      ],
+      "pages": [
+        "company-about"
+      ]
+    },
+    {
+      "file": "/images/modern-office-at-dusk.jpg",
+      "hash": "3ec6c797",
+      "mime": "image/jpeg",
+      "kb": 92.4,
+      "kind": "img",
+      "labels": [
+        "modern-office-at-dusk"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/cases/lingolane-hero.webp",
+      "hash": "eef7de59",
+      "mime": "image/webp",
+      "kb": 83.9,
+      "kind": "img",
+      "labels": [
+        "csh-bg",
+        "lingolane-product-screen"
+      ],
+      "pages": [
+        "case-lingolane",
+        "index",
+        "portfolio",
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/asset-48532597.jpg",
+      "hash": "48532597",
+      "mime": "image/jpeg",
+      "kb": 77.6,
+      "kind": "unknown",
+      "labels": [],
+      "pages": [
+        "index",
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/hamza-ghouri.jpg",
+      "hash": "a4c9acb6",
+      "mime": "image/jpeg",
+      "kb": 74.7,
+      "kind": "img",
+      "labels": [
+        "hamza-ghouri"
+      ],
+      "pages": [
+        "company-about"
+      ]
+    },
+    {
+      "file": "/images/cases/buff-hero.webp",
+      "hash": "15080841",
+      "mime": "image/webp",
+      "kb": 67.4,
+      "kind": "img",
+      "labels": [
+        "csh-bg",
+        "buff-product-screen"
+      ],
+      "pages": [
+        "case-buff",
+        "index",
+        "portfolio",
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/software-team-working-late-in-a-modern.webp",
+      "hash": "c94b2014",
+      "mime": "image/webp",
+      "kb": 63.2,
+      "kind": "img",
+      "labels": [
+        "software-team-working-late-in-a-modern"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/cases/facebloom-hero.webp",
+      "hash": "283e654e",
+      "mime": "image/webp",
+      "kb": 60.5,
+      "kind": "img",
+      "labels": [
+        "csh-bg",
+        "facebloom-product-screen"
+      ],
+      "pages": [
+        "case-facebloom",
+        "index",
+        "portfolio",
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/wardah-bilal.jpg",
+      "hash": "290ac4eb",
+      "mime": "image/jpeg",
+      "kb": 58.3,
+      "kind": "img",
+      "labels": [
+        "wardah-bilal"
+      ],
+      "pages": [
+        "company-about"
+      ]
+    },
+    {
+      "file": "/images/usama-tahir.jpg",
+      "hash": "0508a675",
+      "mime": "image/jpeg",
+      "kb": 58.1,
+      "kind": "img",
+      "labels": [
+        "usama-tahir"
+      ],
+      "pages": [
+        "company-about"
+      ]
+    },
+    {
+      "file": "/images/systems-limited.png",
+      "hash": "58933e1a",
+      "mime": "image/png",
+      "kb": 52.2,
+      "kind": "img",
+      "labels": [
+        "systems-limited"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/goodfirms.jpg",
+      "hash": "c035da90",
+      "mime": "image/jpeg",
+      "kb": 50.9,
+      "kind": "img",
+      "labels": [
+        "goodfirms"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/zain-mustafa.jpg",
+      "hash": "266e3e20",
+      "mime": "image/jpeg",
+      "kb": 50.5,
+      "kind": "img",
+      "labels": [
+        "zain-mustafa"
+      ],
+      "pages": [
+        "company-about"
+      ]
+    },
+    {
+      "file": "/images/cases/toptec-hero.webp",
+      "hash": "66b72257",
+      "mime": "image/webp",
+      "kb": 48.2,
+      "kind": "img",
+      "labels": [
+        "csh-bg",
+        "toptec-product-screen"
+      ],
+      "pages": [
+        "case-toptec",
+        "index",
+        "portfolio",
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/usama-alvi.jpg",
+      "hash": "d097253e",
+      "mime": "image/jpeg",
+      "kb": 47.5,
+      "kind": "img",
+      "labels": [
+        "usama-alvi"
+      ],
+      "pages": [
+        "company-about"
+      ]
+    },
+    {
+      "file": "/images/widad-kamran.jpg",
+      "hash": "6051f1ef",
+      "mime": "image/jpeg",
+      "kb": 46.9,
+      "kind": "img",
+      "labels": [
+        "widad-kamran"
+      ],
+      "pages": [
+        "company-about"
+      ]
+    },
+    {
+      "file": "/images/buff.png",
+      "hash": "040c15f9",
+      "mime": "image/png",
+      "kb": 46.6,
+      "kind": "img",
+      "labels": [
+        "buff"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/junaid-malik.jpg",
+      "hash": "093991ab",
+      "mime": "image/jpeg",
+      "kb": 45.2,
+      "kind": "img",
+      "labels": [
+        "junaid-malik"
+      ],
+      "pages": [
+        "company-about"
+      ]
+    },
+    {
+      "file": "/images/prickly-bear.png",
+      "hash": "dff68435",
+      "mime": "image/png",
+      "kb": 42.2,
+      "kind": "img",
+      "labels": [
+        "prickly-bear"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/fidak-farms.png",
+      "hash": "7a65e036",
+      "mime": "image/png",
+      "kb": 41.6,
+      "kind": "img",
+      "labels": [
+        "fidak-farms"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/ahmad-bilal-khan.jpg",
+      "hash": "06f66071",
+      "mime": "image/jpeg",
+      "kb": 41.3,
+      "kind": "img",
+      "labels": [
+        "ahmad-bilal-khan"
+      ],
+      "pages": [
+        "company-about"
+      ]
+    },
+    {
+      "file": "/images/raza-ahmed.jpg",
+      "hash": "7ce8813f",
+      "mime": "image/jpeg",
+      "kb": 40.6,
+      "kind": "img",
+      "labels": [
+        "raza-ahmed"
+      ],
+      "pages": [
+        "company-about"
+      ]
+    },
+    {
+      "file": "/images/mudassar-hussain.jpg",
+      "hash": "81e1c0de",
+      "mime": "image/jpeg",
+      "kb": 37.8,
+      "kind": "img",
+      "labels": [
+        "mudassar-hussain"
+      ],
+      "pages": [
+        "company-about"
+      ]
+    },
+    {
+      "file": "/images/bilal-rana.jpg",
+      "hash": "cb778cb0",
+      "mime": "image/jpeg",
+      "kb": 36.7,
+      "kind": "img",
+      "labels": [
+        "bilal-rana"
+      ],
+      "pages": [
+        "company-about"
+      ]
+    },
+    {
+      "file": "/images/truckoom.png",
+      "hash": "8ec15e84",
+      "mime": "image/png",
+      "kb": 36,
+      "kind": "img",
+      "labels": [
+        "truckoom"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/bss.png",
+      "hash": "a4465f14",
+      "mime": "image/png",
+      "kb": 36,
+      "kind": "img",
+      "labels": [
+        "bss"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/pantera-energy.png",
+      "hash": "108da2d6",
+      "mime": "image/png",
+      "kb": 34.6,
+      "kind": "img",
+      "labels": [
+        "pantera-energy"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/lucky-core-industries.png",
+      "hash": "c15a5ba0",
+      "mime": "image/png",
+      "kb": 34.5,
+      "kind": "img",
+      "labels": [
+        "lucky-core-industries"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/british-american-tobacco.png",
+      "hash": "5edc34e3",
+      "mime": "image/png",
+      "kb": 32.8,
+      "kind": "img",
+      "labels": [
+        "british-american-tobacco"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/uzair-majed.jpg",
+      "hash": "dd1b2607",
+      "mime": "image/jpeg",
+      "kb": 32.3,
+      "kind": "img",
+      "labels": [
+        "uzair-majed"
+      ],
+      "pages": [
+        "company-about"
+      ]
+    },
+    {
+      "file": "/images/calling-all-kids.png",
+      "hash": "ae0519c9",
+      "mime": "image/png",
+      "kb": 31.6,
+      "kind": "img",
+      "labels": [
+        "calling-all-kids"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/nourri.png",
+      "hash": "d86eb48c",
+      "mime": "image/png",
+      "kb": 31.4,
+      "kind": "img",
+      "labels": [
+        "nourri"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/canopy.png",
+      "hash": "79112050",
+      "mime": "image/png",
+      "kb": 31.3,
+      "kind": "img",
+      "labels": [
+        "canopy"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/visionet.png",
+      "hash": "7551ab86",
+      "mime": "image/png",
+      "kb": 30.8,
+      "kind": "img",
+      "labels": [
+        "visionet"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/cases/openline-hero.webp",
+      "hash": "21ae1b71",
+      "mime": "image/webp",
+      "kb": 30.7,
+      "kind": "img",
+      "labels": [
+        "csh-bg",
+        "openline-product-screen"
+      ],
+      "pages": [
+        "case-openline",
+        "index",
+        "portfolio",
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/cases/maslow-hero.webp",
+      "hash": "7766c7da",
+      "mime": "image/webp",
+      "kb": 28.8,
+      "kind": "img",
+      "labels": [
+        "csh-bg",
+        "maslow-product-screen"
+      ],
+      "pages": [
+        "case-maslow",
+        "index",
+        "portfolio",
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/face.png",
+      "hash": "e82f379d",
+      "mime": "image/png",
+      "kb": 23.3,
+      "kind": "img",
+      "labels": [
+        "face"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/partnerlinq.png",
+      "hash": "ae9a9ad1",
+      "mime": "image/png",
+      "kb": 23.1,
+      "kind": "img",
+      "labels": [
+        "partnerlinq"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/integry.png",
+      "hash": "1619f28b",
+      "mime": "image/png",
+      "kb": 20.2,
+      "kind": "img",
+      "labels": [
+        "integry"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/sparrow.png",
+      "hash": "5486b0db",
+      "mime": "image/png",
+      "kb": 19.5,
+      "kind": "img",
+      "labels": [
+        "sparrow"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/errands.png",
+      "hash": "fce49b7a",
+      "mime": "image/png",
+      "kb": 17.8,
+      "kind": "img",
+      "labels": [
+        "errands"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/we-skoolhouse.png",
+      "hash": "f67c11ad",
+      "mime": "image/png",
+      "kb": 14.4,
+      "kind": "img",
+      "labels": [
+        "we-skoolhouse",
+        "weskool"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/slide.png",
+      "hash": "00c02563",
+      "mime": "image/png",
+      "kb": 11.6,
+      "kind": "img",
+      "labels": [
+        "slide"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/toptec.png",
+      "hash": "2618fbe0",
+      "mime": "image/png",
+      "kb": 11.3,
+      "kind": "img",
+      "labels": [
+        "toptec"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/total-parco.png",
+      "hash": "ce4b4895",
+      "mime": "image/png",
+      "kb": 9.7,
+      "kind": "img",
+      "labels": [
+        "total-parco"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/anzen.png",
+      "hash": "110571f8",
+      "mime": "image/png",
+      "kb": 6.2,
+      "kind": "img",
+      "labels": [
+        "anzen"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/reteta.png",
+      "hash": "3e443490",
+      "mime": "image/png",
+      "kb": 5.8,
+      "kind": "img",
+      "labels": [
+        "reteta"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/tech/aws.png",
+      "hash": "52d5ad8f",
+      "mime": "image/png",
+      "kb": 4.9,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/postgresql.png",
+      "hash": "efb14077",
+      "mime": "image/png",
+      "kb": 4.9,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/react-native.png",
+      "hash": "939b55da",
+      "mime": "image/png",
+      "kb": 4.7,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/neural-networks.png",
+      "hash": "97d8a6b0",
+      "mime": "image/png",
+      "kb": 4.7,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/claude.png",
+      "hash": "2d79a71e",
+      "mime": "image/png",
+      "kb": 4.6,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/llm.png",
+      "hash": "682a2561",
+      "mime": "image/png",
+      "kb": 4.2,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/openai.png",
+      "hash": "b3698a68",
+      "mime": "image/png",
+      "kb": 4.1,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/ml-kit.png",
+      "hash": "538331cf",
+      "mime": "image/png",
+      "kb": 4,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/node-js.png",
+      "hash": "b4011ade",
+      "mime": "image/png",
+      "kb": 3.9,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/nlp.png",
+      "hash": "0d6c4aaf",
+      "mime": "image/png",
+      "kb": 3.7,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/css.png",
+      "hash": "dfdcb66d",
+      "mime": "image/png",
+      "kb": 3.5,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/langchain.png",
+      "hash": "bed8871d",
+      "mime": "image/png",
+      "kb": 3.4,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/python.png",
+      "hash": "0fd91871",
+      "mime": "image/png",
+      "kb": 3.3,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/mysql.png",
+      "hash": "e41a5450",
+      "mime": "image/png",
+      "kb": 3.2,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/gemini.png",
+      "hash": "9e06f9a7",
+      "mime": "image/png",
+      "kb": 3.2,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/serverless.png",
+      "hash": "effa35e4",
+      "mime": "image/png",
+      "kb": 3.2,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/html.png",
+      "hash": "3bbb728e",
+      "mime": "image/png",
+      "kb": 3.1,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/pytorch.png",
+      "hash": "e6593209",
+      "mime": "image/png",
+      "kb": 3.1,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/hudson-white.webp",
+      "hash": "e3cb7b51",
+      "mime": "image/webp",
+      "kb": 3,
+      "kind": "img",
+      "labels": [
+        "hudson-white"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/tech/typescript.png",
+      "hash": "481d5e3c",
+      "mime": "image/png",
+      "kb": 3,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/android.png",
+      "hash": "3737b95e",
+      "mime": "image/png",
+      "kb": 2.8,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/unboxed.png",
+      "hash": "41e2dd84",
+      "mime": "image/png",
+      "kb": 2.7,
+      "kind": "img",
+      "labels": [
+        "unboxed"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/tech/supabase.png",
+      "hash": "3e0da2bb",
+      "mime": "image/png",
+      "kb": 2.7,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/flutter.png",
+      "hash": "9c158ed6",
+      "mime": "image/png",
+      "kb": 2.6,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/tensorflow.png",
+      "hash": "9cc6b25f",
+      "mime": "image/png",
+      "kb": 2.3,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/assi-gol.webp",
+      "hash": "99bb7ebd",
+      "mime": "image/webp",
+      "kb": 2.1,
+      "kind": "img",
+      "labels": [
+        "assi-gol"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/maitham-mohamed.webp",
+      "hash": "ea66f321",
+      "mime": "image/webp",
+      "kb": 2.1,
+      "kind": "img",
+      "labels": [
+        "maitham-mohamed"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/tech/javascript.png",
+      "hash": "07fc1af3",
+      "mime": "image/png",
+      "kb": 2,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/ios.png",
+      "hash": "e58a21d3",
+      "mime": "image/png",
+      "kb": 2,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/github.png",
+      "hash": "219e4224",
+      "mime": "image/png",
+      "kb": 1.9,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/agentic-ai.png",
+      "hash": "ec622cab",
+      "mime": "image/png",
+      "kb": 1.9,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/mcp.png",
+      "hash": "54dff839",
+      "mime": "image/png",
+      "kb": 1.9,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/ci-cd-pipelines.png",
+      "hash": "6b929b9c",
+      "mime": "image/png",
+      "kb": 1.9,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/next-js.png",
+      "hash": "911c565b",
+      "mime": "image/png",
+      "kb": 1.8,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/mongodb.png",
+      "hash": "280d0c48",
+      "mime": "image/png",
+      "kb": 1.8,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/tech/rag.png",
+      "hash": "0446bf67",
+      "mime": "image/png",
+      "kb": 1.6,
+      "kind": "img",
+      "labels": [
+        "ti"
+      ],
+      "pages": [
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/logo-light.png",
+      "hash": "618470a9",
+      "mime": "image/png",
+      "kb": 1.4,
+      "kind": "img",
+      "labels": [
+        "jinnbyte"
+      ],
+      "pages": [
+        "careers",
+        "case-buff",
+        "case-facebloom",
+        "case-lingolane",
+        "case-maslow",
+        "case-openline",
+        "case-smf",
+        "case-toptec",
+        "company-about",
+        "index",
+        "portfolio",
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/logo-dark.png",
+      "hash": "a74fca18",
+      "mime": "image/png",
+      "kb": 1.4,
+      "kind": "img",
+      "labels": [
+        "jinnbyte"
+      ],
+      "pages": [
+        "careers",
+        "case-buff",
+        "case-facebloom",
+        "case-lingolane",
+        "case-maslow",
+        "case-openline",
+        "case-smf",
+        "case-toptec",
+        "company-about",
+        "index",
+        "portfolio",
+        "solutions"
+      ]
+    },
+    {
+      "file": "/images/elenn-kapandais.webp",
+      "hash": "2d2e74bc",
+      "mime": "image/webp",
+      "kb": 1.3,
+      "kind": "img",
+      "labels": [
+        "elenn-kapandais"
+      ],
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "file": "/images/flags/pakistan.webp",
+      "hash": "68d8402e",
+      "mime": "image/webp",
+      "kb": 1,
+      "kind": "img",
+      "labels": [
+        "sl-flag",
+        "flag"
+      ],
+      "pages": [
+        "company-about",
+        "index"
+      ]
+    },
+    {
+      "file": "/images/flags/usa.webp",
+      "hash": "e06eb0d3",
+      "mime": "image/webp",
+      "kb": 1,
+      "kind": "img",
+      "labels": [
+        "sl-flag",
+        "flag"
+      ],
+      "pages": [
+        "company-about",
+        "index"
+      ]
+    },
+    {
+      "file": "/images/flags/canada.webp",
+      "hash": "edbffdba",
+      "mime": "image/webp",
+      "kb": 0.8,
+      "kind": "img",
+      "labels": [
+        "sl-flag",
+        "flag"
+      ],
+      "pages": [
+        "company-about",
+        "index"
+      ]
+    }
+  ],
+  "perPage": {
+    "careers": [
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      },
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      }
+    ],
+    "case-buff": [
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      },
+      {
+        "hash": "15080841",
+        "len": 92095
+      },
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      }
+    ],
+    "case-facebloom": [
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      },
+      {
+        "hash": "283e654e",
+        "len": 82579
+      },
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      }
+    ],
+    "case-lingolane": [
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      },
+      {
+        "hash": "eef7de59",
+        "len": 114555
+      },
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      }
+    ],
+    "case-maslow": [
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      },
+      {
+        "hash": "7766c7da",
+        "len": 39391
+      },
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      }
+    ],
+    "case-openline": [
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      },
+      {
+        "hash": "21ae1b71",
+        "len": 41931
+      },
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      }
+    ],
+    "case-smf": [
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      },
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      }
+    ],
+    "case-toptec": [
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      },
+      {
+        "hash": "66b72257",
+        "len": 65879
+      },
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      }
+    ],
+    "company-about": [
+      {
+        "hash": "93dd29b0",
+        "len": 126683
+      },
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      },
+      {
+        "hash": "b3b841eb",
+        "len": 170667
+      },
+      {
+        "hash": "e06eb0d3",
+        "len": 1375
+      },
+      {
+        "hash": "edbffdba",
+        "len": 1111
+      },
+      {
+        "hash": "68d8402e",
+        "len": 1379
+      },
+      {
+        "hash": "093991ab",
+        "len": 61775
+      },
+      {
+        "hash": "06f66071",
+        "len": 56371
+      },
+      {
+        "hash": "7ce8813f",
+        "len": 55511
+      },
+      {
+        "hash": "cb778cb0",
+        "len": 50131
+      },
+      {
+        "hash": "81e1c0de",
+        "len": 51631
+      },
+      {
+        "hash": "6051f1ef",
+        "len": 64123
+      },
+      {
+        "hash": "a4c9acb6",
+        "len": 102055
+      },
+      {
+        "hash": "d097253e",
+        "len": 64887
+      },
+      {
+        "hash": "0508a675",
+        "len": 79343
+      },
+      {
+        "hash": "266e3e20",
+        "len": 69031
+      },
+      {
+        "hash": "dd1b2607",
+        "len": 44103
+      },
+      {
+        "hash": "290ac4eb",
+        "len": 79647
+      },
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      }
+    ],
+    "index": [
+      {
+        "hash": "a1ed105b",
+        "len": 229442
+      },
+      {
+        "hash": "d7660b7f",
+        "len": 188474
+      },
+      {
+        "hash": "8849b5a8",
+        "len": 174666
+      },
+      {
+        "hash": "882fa07a",
+        "len": 195174
+      },
+      {
+        "hash": "717787ee",
+        "len": 177114
+      },
+      {
+        "hash": "fdade5e5",
+        "len": 215438
+      },
+      {
+        "hash": "b086e2e7",
+        "len": 179002
+      },
+      {
+        "hash": "a4c9d25c",
+        "len": 164066
+      },
+      {
+        "hash": "48532597",
+        "len": 105991
+      },
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      },
+      {
+        "hash": "c94b2014",
+        "len": 86323
+      },
+      {
+        "hash": "e06eb0d3",
+        "len": 1375
+      },
+      {
+        "hash": "edbffdba",
+        "len": 1111
+      },
+      {
+        "hash": "68d8402e",
+        "len": 1379
+      },
+      {
+        "hash": "58933e1a",
+        "len": 71270
+      },
+      {
+        "hash": "7551ab86",
+        "len": 42006
+      },
+      {
+        "hash": "1619f28b",
+        "len": 27610
+      },
+      {
+        "hash": "f67c11ad",
+        "len": 19730
+      },
+      {
+        "hash": "3e443490",
+        "len": 7886
+      },
+      {
+        "hash": "ae9a9ad1",
+        "len": 31610
+      },
+      {
+        "hash": "5edc34e3",
+        "len": 44862
+      },
+      {
+        "hash": "ce4b4895",
+        "len": 13230
+      },
+      {
+        "hash": "c15a5ba0",
+        "len": 47094
+      },
+      {
+        "hash": "108da2d6",
+        "len": 47258
+      },
+      {
+        "hash": "79112050",
+        "len": 42786
+      },
+      {
+        "hash": "8ec15e84",
+        "len": 49230
+      },
+      {
+        "hash": "fce49b7a",
+        "len": 24362
+      },
+      {
+        "hash": "d86eb48c",
+        "len": 42962
+      },
+      {
+        "hash": "a4465f14",
+        "len": 49178
+      },
+      {
+        "hash": "7a65e036",
+        "len": 56770
+      },
+      {
+        "hash": "110571f8",
+        "len": 8442
+      },
+      {
+        "hash": "41e2dd84",
+        "len": 3746
+      },
+      {
+        "hash": "00c02563",
+        "len": 15910
+      },
+      {
+        "hash": "e82f379d",
+        "len": 31886
+      },
+      {
+        "hash": "5486b0db",
+        "len": 26614
+      },
+      {
+        "hash": "040c15f9",
+        "len": 63586
+      },
+      {
+        "hash": "dff68435",
+        "len": 57574
+      },
+      {
+        "hash": "ae0519c9",
+        "len": 43226
+      },
+      {
+        "hash": "eef7de59",
+        "len": 114555
+      },
+      {
+        "hash": "7766c7da",
+        "len": 39391
+      },
+      {
+        "hash": "15080841",
+        "len": 92095
+      },
+      {
+        "hash": "21ae1b71",
+        "len": 41931
+      },
+      {
+        "hash": "283e654e",
+        "len": 82579
+      },
+      {
+        "hash": "66b72257",
+        "len": 65879
+      },
+      {
+        "hash": "e3cb7b51",
+        "len": 4163
+      },
+      {
+        "hash": "2d2e74bc",
+        "len": 1747
+      },
+      {
+        "hash": "f67c11ad",
+        "len": 19730
+      },
+      {
+        "hash": "ea66f321",
+        "len": 2855
+      },
+      {
+        "hash": "99bb7ebd",
+        "len": 2907
+      },
+      {
+        "hash": "dff68435",
+        "len": 57574
+      },
+      {
+        "hash": "c035da90",
+        "len": 69455
+      },
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      },
+      {
+        "inlineSvgOrnaments": 4
+      }
+    ],
+    "portfolio": [
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      },
+      {
+        "hash": "eef7de59",
+        "len": 114555
+      },
+      {
+        "hash": "283e654e",
+        "len": 82579
+      },
+      {
+        "hash": "15080841",
+        "len": 92095
+      },
+      {
+        "hash": "21ae1b71",
+        "len": 41931
+      },
+      {
+        "hash": "7766c7da",
+        "len": 39391
+      },
+      {
+        "hash": "66b72257",
+        "len": 65879
+      },
+      {
+        "hash": "618470a9",
+        "len": 1970
+      }
+    ],
+    "solutions": [
+      {
+        "hash": "a1ed105b",
+        "len": 229442
+      },
+      {
+        "hash": "d7660b7f",
+        "len": 188474
+      },
+      {
+        "hash": "8849b5a8",
+        "len": 174666
+      },
+      {
+        "hash": "882fa07a",
+        "len": 195174
+      },
+      {
+        "hash": "717787ee",
+        "len": 177114
+      },
+      {
+        "hash": "fdade5e5",
+        "len": 215438
+      },
+      {
+        "hash": "b086e2e7",
+        "len": 179002
+      },
+      {
+        "hash": "a4c9d25c",
+        "len": 164066
+      },
+      {
+        "hash": "48532597",
+        "len": 105991
+      },
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      },
+      {
+        "hash": "3ec6c797",
+        "len": 126223
+      },
+      {
+        "hash": "eef7de59",
+        "len": 114555
+      },
+      {
+        "hash": "7766c7da",
+        "len": 39391
+      },
+      {
+        "hash": "15080841",
+        "len": 92095
+      },
+      {
+        "hash": "21ae1b71",
+        "len": 41931
+      },
+      {
+        "hash": "283e654e",
+        "len": 82579
+      },
+      {
+        "hash": "66b72257",
+        "len": 65879
+      },
+      {
+        "hash": "54dff839",
+        "len": 2606
+      },
+      {
+        "hash": "b3698a68",
+        "len": 5558
+      },
+      {
+        "hash": "9e06f9a7",
+        "len": 4378
+      },
+      {
+        "hash": "2d79a71e",
+        "len": 6310
+      },
+      {
+        "hash": "0446bf67",
+        "len": 2246
+      },
+      {
+        "hash": "ec622cab",
+        "len": 2614
+      },
+      {
+        "hash": "bed8871d",
+        "len": 4730
+      },
+      {
+        "hash": "682a2561",
+        "len": 5794
+      },
+      {
+        "hash": "0fd91871",
+        "len": 4466
+      },
+      {
+        "hash": "9cc6b25f",
+        "len": 3114
+      },
+      {
+        "hash": "e6593209",
+        "len": 4234
+      },
+      {
+        "hash": "538331cf",
+        "len": 5470
+      },
+      {
+        "hash": "0d6c4aaf",
+        "len": 5018
+      },
+      {
+        "hash": "97d8a6b0",
+        "len": 6450
+      },
+      {
+        "hash": "911c565b",
+        "len": 2526
+      },
+      {
+        "hash": "481d5e3c",
+        "len": 4058
+      },
+      {
+        "hash": "3bbb728e",
+        "len": 4282
+      },
+      {
+        "hash": "dfdcb66d",
+        "len": 4810
+      },
+      {
+        "hash": "07fc1af3",
+        "len": 2790
+      },
+      {
+        "hash": "3737b95e",
+        "len": 3902
+      },
+      {
+        "hash": "e58a21d3",
+        "len": 2690
+      },
+      {
+        "hash": "9c158ed6",
+        "len": 3598
+      },
+      {
+        "hash": "939b55da",
+        "len": 6502
+      },
+      {
+        "hash": "0fd91871",
+        "len": 4466
+      },
+      {
+        "hash": "b4011ade",
+        "len": 5318
+      },
+      {
+        "hash": "52d5ad8f",
+        "len": 6758
+      },
+      {
+        "hash": "219e4224",
+        "len": 2658
+      },
+      {
+        "hash": "6b929b9c",
+        "len": 2574
+      },
+      {
+        "hash": "effa35e4",
+        "len": 4350
+      },
+      {
+        "hash": "efb14077",
+        "len": 6646
+      },
+      {
+        "hash": "280d0c48",
+        "len": 2474
+      },
+      {
+        "hash": "3e0da2bb",
+        "len": 3746
+      },
+      {
+        "hash": "e41a5450",
+        "len": 4430
+      },
+      {
+        "hash": "2618fbe0",
+        "len": 15514
+      },
+      {
+        "hash": "618470a9",
+        "len": 1970
+      },
+      {
+        "hash": "a74fca18",
+        "len": 1962
+      },
+      {
+        "inlineSvgOrnaments": 4
+      }
+    ]
+  }
+}
