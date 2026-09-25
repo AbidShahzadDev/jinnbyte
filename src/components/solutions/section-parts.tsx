@@ -9,7 +9,7 @@ import type { InlineIcon } from "@/data/solutions";
  * viewport is big enough to carry it. Below that it falls back to normal flow.
  */
 export const BAND =
-  "py-[78px] screenband:flex screenband:min-h-[100svh] screenband:flex-col screenband:justify-center screenband:py-[clamp(96px,11vh,140px)] bg-[#f7f7f5]";
+  "py-[78px] screenband:flex screenband:min-h-[100svh] screenband:flex-col screenband:justify-center screenband:py-[clamp(96px,11vh,140px)] bg-[#141414]";
 
 /** `.kicker` — this page uses a slightly tighter tracking than the others. */
 export function Kicker({

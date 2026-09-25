@@ -49,7 +49,7 @@ export function SolutionsHero() {
 export function WhereWeHelp() {
   const { whereWeHelp } = solutions;
   return (
-    <section className={BAND}>
+    <section className={cn(BAND, "bg-white")}>
       <Container>
         <SecHead
           kicker={whereWeHelp.kicker}
@@ -82,15 +82,39 @@ export function WhereWeHelp() {
 }
 
 /** "Industries" — a dark band carrying the expanding image accordion. */
+// Previous Industries section, preserved as requested.
+// export function IndustriesStrip() {
+//   const { industries } = solutions;
+//   return (
+//     <section id="industries" className={cn("bg-[#141414]", BAND)}>
+//       <Container>
+//         <Reveal className="mb-[clamp(40px,5vh,60px)] flex flex-wrap items-end justify-between gap-7">
+//           <div>
+//             <Kicker onDark>{industries.kicker}</Kicker>
+//             <h2 className="md:text-[42px] text-[28px] font-light leading-[1.12] tracking-[-0.03em] text-white">
+//               <Lines lines={industries.title} />
+//             </h2>
+//           </div>
+//           <p className="max-w-[42ch] text-[16px] font-light text-white/62">{industries.lede}</p>
+//         </Reveal>
+//
+//         <Reveal>
+//           <IndustryAccordion panels={industries.panels} />
+//         </Reveal>
+//       </Container>
+//     </section>
+//   );
+// }
+
 export function IndustriesStrip() {
   const { industries } = solutions;
   return (
-    <section id="industries" className={cn("bg-[#141414]", BAND)}>
+    <section id="industries" className={cn(BAND, "bg-[#141414]")}>
       <Container>
-        <Reveal className="mb-[clamp(40px,5vh,60px)] flex flex-wrap items-end justify-between gap-7">
+        <Reveal className="mb-[clamp(40px,5vh,60px)] max-[900px]:mb-6.5 flex flex-wrap items-end justify-between gap-7">
           <div>
             <Kicker onDark>{industries.kicker}</Kicker>
-            <h2 className="md:text-[42px] text-[28px] font-light leading-[1.12] tracking-[-0.03em] text-white">
+            <h2 className="text-[clamp(30px,3.4vw,46px)] font-light leading-[1.12] tracking-[-0.03em] text-white">
               <Lines lines={industries.title} />
             </h2>
           </div>
@@ -98,7 +122,7 @@ export function IndustriesStrip() {
         </Reveal>
 
         <Reveal>
-          <IndustryAccordion panels={industries.panels} />
+          <IndustryAccordion />
         </Reveal>
       </Container>
     </section>
@@ -111,7 +135,7 @@ export function WhySolutions() {
   /** Per-column icon tints, from the template's nth-of-type rules. */
   const tints = ["rgb(120,193,196)", "rgb(226,182,94)", "rgb(232,158,130)", "rgb(150,160,230)"];
   return (
-    <section className={cn("bg-[#141414]", BAND)}>
+    <section className={cn(BAND, "bg-[#141414]")}>
       <Container>
         <SecHead kicker={why.kicker} title={why.title} lede={why.lede} onDark />
 
@@ -147,7 +171,7 @@ export function WhySolutions() {
 export function TechStack() {
   const { tech } = solutions;
   return (
-    <section className={BAND}>
+    <section className={cn(BAND, "bg-white")}>
       <Container>
         <Reveal className="mb-[clamp(52px,6vh,76px)] grid items-start gap-12 min-[901px]:grid-cols-2">
           <div>
@@ -231,7 +255,7 @@ export function Recognition() {
 export function SolutionsCta() {
   const { cta } = solutions;
   return (
-    <section className={BAND}>
+    <section className={cn(BAND, "bg-white")}>
       <Container>
         <Reveal className="rounded-[10px] bg-[linear-gradient(100deg,#163336_0%,#1a1a1a_8%,#1c1c1c_72%,#1a1a1a_92%,#163336_100%)] px-7 py-12 md:p-19">
           <div className="grid items-center gap-8 min-[901px]:grid-cols-[0.9fr_1fr] min-[901px]:gap-16">

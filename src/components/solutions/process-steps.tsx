@@ -67,7 +67,7 @@ export function ProcessSteps() {
   }, []);
 
   return (
-    <section className={BAND}>
+    <section className={cn(BAND, "bg-[#f7f7f5]")}>
       <Container>
         <SecHead kicker={process.kicker} title={process.title} lede={process.lede} />
 

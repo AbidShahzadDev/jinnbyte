@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
 
+import { industries as industryCatalog } from "@/data/industries";
 import { IndustryPanels } from "@/components/work/industry-panels";
 import { Container } from "@/components/ui/section";
 import { Reveal } from "@/components/ui/reveal";
@@ -19,8 +20,17 @@ export function WorkBrowser() {
   const gridRef = useRef<HTMLDivElement>(null);
 
   const { industries, work } = portfolio;
-  const shown =
-    cat === "all" ? work.projects : work.projects.filter((p) => p.cat === cat);
+  // Previous category grouping:
+  // const shown = cat === "all" ? work.projects : work.projects.filter((p) => p.cat === cat);
+  const selectedIndustry = industryCatalog.find((industry) => industry.cat === cat);
+  const shown = cat === "all"
+    ? work.projects
+    : work.projects.filter((project) => selectedIndustry?.caseStudies.includes(project.slug));
+  // Previous filter source: work.filters. Match the new template's case-study groups.
+  const filters = [
+    { cat: "all", label: "All" },
+    ...industryCatalog.filter((industry) => industry.caseStudies.length > 0),
+  ];
 
   const pick = (next: string) => {
     setCat(next);
@@ -34,6 +44,7 @@ export function WorkBrowser() {
 
   return (
     <>
+      {/* Previous Industries section, preserved as requested.
       <section
         id="industries"
         className="min-[761px]:py-28 min-[641px]:max-[761px]:py-[78px] max-[641px]:py-[62px]"
@@ -55,6 +66,31 @@ export function WorkBrowser() {
 
           <Reveal>
             <IndustryPanels panels={industries.panels} onPick={pick} />
+          </Reveal>
+        </Container>
+      </section>
+      */}
+      <section
+        id="industries"
+        className="min-[761px]:py-28 min-[641px]:max-[761px]:py-[78px] max-[641px]:py-[62px]"
+      >
+        <Container gutter="work">
+          <Reveal className="flex flex-wrap items-end justify-between gap-7 min-[641px]:mb-8.5 max-[641px]:mb-6.5">
+            <div>
+              <div className="accent-underscore mb-5.5 font-sans text-[11.5px] font-medium uppercase tracking-[0.22em] text-brand-deep max-[641px]:mb-4">
+                {industries.kicker}
+              </div>
+              <h2 className="text-[clamp(26px,3.2vw,40px)] font-extralight tracking-[-0.025em]">
+                {industries.title}
+              </h2>
+            </div>
+            <p className="max-w-[40ch] text-[16px] leading-[1.65] font-light text-ink-soft max-[641px]:text-[15.5px]">
+              {industries.lede}
+            </p>
+          </Reveal>
+
+          <Reveal>
+            <IndustryPanels onPick={pick} />
           </Reveal>
         </Container>
       </section>
@@ -83,7 +119,7 @@ export function WorkBrowser() {
               aria-label="Filter case studies by industry"
               className="flex flex-nowrap gap-2.25 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] min-[641px]:flex-wrap min-[641px]:overflow-visible min-[641px]:pb-0 [&::-webkit-scrollbar]:hidden"
             >
-              {work.filters.map((f) => (
+              {filters.map((f) => (
                 <button
                   key={f.cat}
                   type="button"
