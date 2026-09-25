@@ -95,9 +95,9 @@ export function Testimonials({ sectionClassName }: { sectionClassName?: string }
       )}
     >
       <Container className="relative">
-        <Reveal className="mb-[clamp(44px,6vh,80px)] max-w-[660px]">
+        <Reveal className="md:mb-11 mb-8 max-w-[660px]">
           <SectionKicker onDark>{testimonials.kicker}</SectionKicker>
-          <h2 className="mt-4 text-[clamp(30px,4.6vw,56px)] font-extralight leading-[1.08] tracking-[-0.03em] text-white">
+          <h2 className="mt-4 md:text-[42px] text-[28px] font-extralight leading-[1.08] tracking-[-0.03em] text-white">
             {testimonials.title.map((line, i) => (
               <span key={i} className="block">
                 {line}

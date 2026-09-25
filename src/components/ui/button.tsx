@@ -16,7 +16,7 @@ export const BUTTON_SIZES = {
     "rounded-none px-[30px] py-[15px] text-[13px] tracking-[0.11em] max-[481px]:px-[22px] max-[481px]:py-[13px] max-[481px]:text-[12px]",
   case: "rounded-none px-[26px] py-[14px] text-[12.5px] tracking-[0.11em] max-[481px]:px-[22px] max-[481px]:py-[13px] max-[481px]:text-[12px]",
   classic:
-    "rounded-[6px] px-[26px] py-[13px] text-[14px] tracking-[0.06em] max-[381px]:px-[18px] max-[381px]:py-[12px] max-[381px]:text-[13px]",
+    " px-[26px] py-[13px] text-[14px] tracking-[0.06em] max-[381px]:px-[18px] max-[381px]:py-[12px] max-[381px]:text-[13px]",
 } as const;
 
 export type ButtonSize = keyof typeof BUTTON_SIZES;

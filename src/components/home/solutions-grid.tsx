@@ -56,12 +56,12 @@ export function SolutionsGrid({
   return (
     <section id="solutions" className={cn("py-[clamp(18px,2.8vh,52px)]", sectionClassName)}>
       <Container>
-        <Reveal className="mb-[clamp(12px,2vh,28px)] grid items-center gap-5.5 lg:grid-cols-[1.15fr_0.85fr] lg:gap-[70px]">
+        <Reveal className="md:mb-11 mb-8 grid items-center gap-5.5 lg:grid-cols-[1.15fr_0.85fr] lg:gap-[70px]">
           <div>
             <SectionKicker rule className="mb-[clamp(9px,1.6vh,18px)]">
               {solutions.kicker}
             </SectionKicker>
-            <h2 className="max-w-[22ch] text-[clamp(22px,min(2.8vw,4.4vh),38px)] font-light leading-[1.13] tracking-[-0.03em]">
+            <h2 className="md:text-[42px] text-[28px] font-light leading-[1.13] tracking-[-0.03em]">
               {solutions.title.map((line, i) => (
                 <span key={i} className="block">
                   {line}

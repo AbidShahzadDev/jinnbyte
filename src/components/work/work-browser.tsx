@@ -44,7 +44,7 @@ export function WorkBrowser() {
               <div className="accent-underscore mb-5.5 font-sans text-[11.5px] font-medium uppercase tracking-[0.22em] text-brand-deep max-[641px]:mb-4">
                 {industries.kicker}
               </div>
-              <h2 className="text-[clamp(26px,3.2vw,40px)] font-extralight tracking-[-0.025em]">
+              <h2 className="md:text-[42px] text-[28px]  font-extralight tracking-[-0.025em]">
                 {industries.title}
               </h2>
             </div>
@@ -69,7 +69,7 @@ export function WorkBrowser() {
             <div className="accent-underscore mb-5.5 font-sans text-[11.5px] font-medium uppercase tracking-[0.22em] text-brand-deep max-[641px]:mb-4">
               {work.kicker}
             </div>
-            <h2 className="text-[clamp(28px,3.4vw,42px)] font-extralight tracking-[-0.025em]">
+            <h2 className="md:text-[42px] text-[28px] font-extralight tracking-[-0.025em]">
               {work.title}
             </h2>
             <p className="mt-5 max-w-[56ch] text-[17px] leading-[1.65] font-light text-ink-soft max-[641px]:text-[15.5px]">

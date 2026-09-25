@@ -85,7 +85,7 @@ function Head({
       </Kick>
       <h2
         className={cn(
-          "mt-3.5 max-w-[22ch] font-display text-[clamp(23px,2.3vw,32px)] font-extralight leading-[1.18] tracking-[-0.028em] max-[481px]:text-[22px]",
+          "mt-3.5 max-w-[22ch] font-display md:text-[42px] text-[28px] font-extralight leading-[1.18] tracking-[-0.028em] ",
           tone === "dark" ? "text-white" : "text-ink"
         )}
       >
@@ -174,7 +174,7 @@ export function CaseBrief({ study }: { study: CaseStudy }) {
         <div className="grid items-stretch max-[981px]:gap-0 min-[981px]:max-[1081px]:gap-8.5 min-[1081px]:grid-cols-2 min-[1081px]:gap-11">
           <Reveal className="max-[981px]:pb-8.5 min-[1081px]:py-11.5 min-[1081px]:pr-10">
             <Kick>{study.challenge.kicker}</Kick>
-            <h2 className="mt-3.5 max-w-[22ch] font-display text-[clamp(21px,2.1vw,28px)] font-extralight leading-[1.2] tracking-[-0.028em] max-[481px]:text-[22px]">
+            <h2 className="mt-3.5 max-w-[22ch] font-display md:text-[42px] text-[28px] font-extralight leading-[1.2] tracking-[-0.028em]">
               {study.challenge.title}
             </h2>
             <hr className="mt-4.5 mb-5 h-px w-13 border-0 bg-[var(--acc)]" />
@@ -196,7 +196,7 @@ export function CaseBrief({ study }: { study: CaseStudy }) {
             )}
           >
             <Kick tone="dark">{study.solution.kicker}</Kick>
-            <h2 className="mt-3.5 max-w-[22ch] font-display text-[clamp(21px,2.1vw,28px)] font-extralight leading-[1.2] tracking-[-0.028em] max-[481px]:text-[22px] text-white">
+            <h2 className="mt-3.5 max-w-[22ch] font-display md:text-[42px] text-[28px] font-extralight leading-[1.2] tracking-[-0.028em] text-white">
               {study.solution.title}
             </h2>
             <hr className="mt-4.5 mb-5 h-px w-13 border-0 bg-white/34" />
@@ -476,7 +476,7 @@ export function CaseCta({ study }: { study: CaseStudy }) {
                 <Kick tone="dark" className="mb-[22px]">
                   {study.cta.kicker}
                 </Kick>
-                <h2 className="mt-3.5 max-w-[17ch] font-display text-[clamp(24px,2.6vw,36px)] font-extralight leading-[1.16] tracking-[-0.03em] text-white max-[481px]:text-[22px]">
+                <h2 className="mt-3.5 max-w-[17ch] font-display md:text-[42px] text-[28px] font-extralight leading-[1.16] tracking-[-0.03em] text-white">
                   {study.cta.title}
                 </h2>
               </div>

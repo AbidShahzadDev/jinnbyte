@@ -33,7 +33,7 @@ export function SolutionsHero() {
           <h1 className="mb-5 text-[clamp(30px,4.6vw,58px)] font-extralight leading-[1.12] tracking-[-0.035em] text-white">
             {hero.title}
           </h1>
-          <p className="mb-7.5 max-w-[52ch] text-[clamp(16px,1.9vw,18.5px)] font-light text-white/80">
+          <p className="mb-7.5 max-w-[52ch] text-[clamp(16px,1.9vw,17px)] font-light text-white/80">
             {hero.lede}
           </p>
           <ButtonLink href="/#contact" variant="brand" arrow>
@@ -90,7 +90,7 @@ export function IndustriesStrip() {
         <Reveal className="mb-[clamp(40px,5vh,60px)] flex flex-wrap items-end justify-between gap-7">
           <div>
             <Kicker onDark>{industries.kicker}</Kicker>
-            <h2 className="text-[clamp(30px,3.4vw,46px)] font-light leading-[1.12] tracking-[-0.03em] text-white">
+            <h2 className="md:text-[42px] text-[28px] font-light leading-[1.12] tracking-[-0.03em] text-white">
               <Lines lines={industries.title} />
             </h2>
           </div>
@@ -152,7 +152,7 @@ export function TechStack() {
         <Reveal className="mb-[clamp(52px,6vh,76px)] grid items-start gap-12 min-[901px]:grid-cols-2">
           <div>
             <Kicker>{tech.kicker}</Kicker>
-            <h2 className="text-[clamp(29px,4.3vw,50px)] font-extralight leading-[1.12] tracking-[-0.03em]">
+            <h2 className="md:text-[42px] text-[28px] font-extralight leading-[1.12] tracking-[-0.03em]">
               <Lines lines={tech.title} />
             </h2>
           </div>
@@ -204,7 +204,7 @@ export function Recognition() {
       <Container>
         <Reveal>
           <Kicker>{recognition.kicker}</Kicker>
-          <h2 className="text-[clamp(29px,4.3vw,50px)] font-extralight leading-[1.12] tracking-[-0.03em]">
+          <h2 className="md:text-[42px] text-[28px] font-extralight leading-[1.12] tracking-[-0.03em]">
             {recognition.title}
           </h2>
           <p className="mt-5 max-w-[32em] text-[16px] text-ink-soft">{recognition.lede}</p>
@@ -237,7 +237,7 @@ export function SolutionsCta() {
           <div className="grid items-center gap-8 min-[901px]:grid-cols-[0.9fr_1fr] min-[901px]:gap-16">
             <div>
               <Kicker onDark>{cta.kicker}</Kicker>
-              <h2 className="max-w-[16ch] text-[clamp(28px,3.2vw,42px)] font-extralight leading-[1.14] tracking-[-0.03em] text-white">
+              <h2 className="max-w-[16ch] md:text-[42px] text-[28px]  font-extralight leading-[1.14] tracking-[-0.03em] text-white">
                 {cta.title}
               </h2>
             </div>

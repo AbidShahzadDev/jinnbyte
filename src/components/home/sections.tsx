@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-import { ButtonLink } from "@/components/ui/button";
 import { BLEED_PADDING, DARK_GRADIENT } from "@/components/ui/dark-band";
 import { Container } from "@/components/ui/section";
 import { CountUp } from "@/components/ui/count-up";
@@ -26,46 +25,6 @@ function Lines({ lines }: { lines: readonly string[] }) {
 
 /* ------------------------------------------------------------------ */
 
-export function Hero() {
-  const { hero } = home;
-  return (
-    <section
-      // Marks the dark hero so the sticky header renders transparent over it.
-      data-hero
-      className="relative -mt-19 flex min-h-[max(660px,100svh)] items-center overflow-hidden bg-night max-[760px]:min-h-0"
-    >
-      <Image
-        src={hero.image}
-        alt={hero.imageAlt}
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover object-[72%_50%]"
-      />
-      <div className="absolute inset-0 bg-[linear-gradient(100deg,rgba(3,8,18,.9)_0%,rgba(3,8,18,.74)_26%,rgba(3,8,18,.28)_58%,rgba(3,8,18,0)_100%)]" />
-
-      <Container className="relative z-[2] flex-1 pt-32 pb-16 md:pt-[140px] md:pb-30">
-        <div className="max-w-full lg:max-w-[min(62ch,64%)]">
-          <h1 className="mt-4.5 mb-5 text-[clamp(30px,4.6vw,58px)] font-extralight leading-[1.12] tracking-[-0.035em] text-white lg:whitespace-nowrap">
-            <Lines lines={hero.title} />
-          </h1>
-          <p className="mb-7.5 max-w-[44ch] text-[clamp(16px,1.9vw,18.5px)] font-light text-white/80">
-            {hero.lede}
-          </p>
-          <div className="flex flex-wrap gap-3.5">
-            <ButtonLink href="/#contact" variant="brand" arrow>
-              {hero.ctas[0]?.label ?? "Discuss your challenge"}
-            </ButtonLink>
-            <ButtonLink href="/work" variant="lineOnDark" arrow>
-              {hero.ctas[1]?.label ?? "Explore our work"}
-            </ButtonLink>
-          </div>
-        </div>
-      </Container>
-    </section>
-  );
-}
-
 export function AtAGlance() {
   const { glance } = home;
   return (
@@ -83,11 +42,11 @@ export function AtAGlance() {
               <SectionKicker onDark className="mb-5.5">
                 {glance.kicker}
               </SectionKicker>
-              <h2 className="text-[clamp(26px,3vw,42px)] font-extralight leading-[1.13] tracking-[-0.032em] text-white">
+              <h2 className="md:text-[42px] text-[28px] font-extralight leading-[1.13] tracking-[-0.032em] text-white">
                 <Lines lines={glance.title} />
               </h2>
               <hr className="mt-6.5 mb-5.5 h-0.5 w-11 border-0 bg-brand-on-dark" />
-              <p className="text-[15px] leading-[1.72] font-light text-white/58">{glance.lede}</p>
+              <p className="text-[14px] leading-[1.72] font-light text-white/58">{glance.lede}</p>
             </Reveal>
 
             {/* The template's 2x2 block has no cell rules — only spacing. */}
@@ -157,7 +116,7 @@ export function Clients() {
       <Container className="relative z-[1]">
         <Reveal className="mx-auto mb-[clamp(44px,6vh,80px)] max-w-[66ch] text-center">
           <SectionKicker className="mb-3.5 justify-center">{clients.kicker}</SectionKicker>
-          <h2 className="text-[clamp(25px,2.6vw,36px)] font-extralight leading-[1.16] tracking-[-0.03em]">
+          <h2 className="md:text-[42px] text-[28px] font-extralight leading-[1.16] tracking-[-0.03em]">
             {clients.title}
           </h2>
           <SectionLede className="mt-3.5 text-[15.6px] font-light leading-[1.74] text-ink-soft [@media(max-height:790px)]:text-[14.5px]">
@@ -209,7 +168,7 @@ export function WhyJinnByte() {
       <Container>
         <Reveal className="mb-11 max-w-[760px] md:mb-14">
           <SectionKicker onDark className="mb-4 md:mb-5.5">{why.kicker}</SectionKicker>
-          <h2 className="text-[clamp(29px,4.3vw,50px)] font-extralight tracking-[-0.03em] text-white">
+          <h2 className="md:text-[42px] text-[28px] font-extralight tracking-[-0.03em] text-white">
             <Lines lines={why.title} />
           </h2>
         </Reveal>
@@ -227,7 +186,7 @@ export function WhyJinnByte() {
               >
                 {col.n}
               </span>
-              <h3 className="mb-2.5 font-display text-[18px] font-normal text-white">{col.title}</h3>
+              <h3 className="mb-2.5 font-display text-[17px] font-semibold text-white">{col.title}</h3>
               <p className="text-[14px] leading-[1.7] text-white/64">{col.blurb}</p>
             </Reveal>
           ))}
@@ -245,7 +204,7 @@ export function Recognition() {
         <div className="grid items-center gap-10.5 lg:grid-cols-[0.95fr_1.05fr] lg:gap-15">
           <Reveal>
             <SectionKicker className="mb-4 md:mb-5.5">{certs.kicker}</SectionKicker>
-            <h2 className="text-[clamp(29px,4.3vw,50px)] font-extralight tracking-[-0.03em]">
+            <h2 className="md:text-[42px] text-[28px] font-extralight tracking-[-0.03em]">
               {certs.title}
             </h2>
             <p className="mt-5 text-[15.5px] font-light text-ink-soft md:text-[17px]">{certs.lede}</p>
@@ -291,7 +250,7 @@ export function ContactSection() {
         <div className="grid items-center gap-11 lg:grid-cols-2 lg:gap-15">
           <Reveal>
             <SectionKicker onDark className="mb-4 md:mb-5.5">{contact.kicker}</SectionKicker>
-            <h2 className="text-[clamp(29px,4.3vw,50px)] font-extralight tracking-[-0.03em] text-white">
+            <h2 className="md:text-[42px] text-[28px] font-extralight tracking-[-0.03em] text-white">
               <Lines lines={contact.title} />
             </h2>
             <p className="mt-5 max-w-[50ch] text-[15.5px] font-light text-white/70 md:text-[17px]">

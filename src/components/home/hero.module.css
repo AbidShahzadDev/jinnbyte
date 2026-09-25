@@ -1,0 +1,150 @@
+/* Final cascade of .hero.full in templates/index.html, scoped to the home hero. */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top: -76px;
+  padding: 0;
+  min-height: max(660px, 100svh);
+  background: #08141a;
+}
+
+.hero .image {
+  max-width: none;
+  object-fit: cover;
+  object-position: 66% 50%;
+  animation: heroIn 2.6s var(--ease-brand) both,
+    heroDrift 30s ease-in-out 2.6s infinite alternate;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(100deg, #08141a 0%, rgb(8 20 26 / 0.95) 38%, rgb(8 20 26 / 0.62) 62%, rgb(8 20 26 / 0.5) 100%);
+}
+
+.wrap {
+  position: relative;
+  z-index: 2;
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 140px 32px 120px;
+}
+
+.inner {
+  position: relative;
+  z-index: 2;
+  max-width: min(72ch, 58%);
+}
+
+.inner > * {
+  animation: heroUp 1.05s var(--ease-brand) both;
+}
+
+.inner .headline {
+  margin: 0 0 24px;
+  color: #fff;
+  font-size: clamp(34px, 4.3vw, 54px);
+  font-weight: 200;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  white-space: normal;
+  animation-delay: 0.32s;
+}
+
+.inner .lede {
+  max-width: 58ch;
+  margin-bottom: 32px;
+  color: #b9cbd2;
+  font-size: clamp(15px, 1.5vw, 17px);
+  font-weight: 300;
+  line-height: 1.68;
+  animation-delay: 0.46s;
+}
+
+.inner .cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 16px;
+  animation-delay: 0.6s;
+}
+
+.cta a {
+  padding: 15px 30px;
+  font-size: 13px;
+}
+
+.cta a:hover {
+  /* The template uses transform; avoid adding Tailwind's separate translate. */
+  translate: none;
+  transform: translateY(-2px);
+}
+
+.cta .primary,
+.cta .primary:hover {
+  box-shadow: inset 0 0 0 1px var(--color-brand);
+}
+
+.cta .primary:hover {
+  background: rgb(120 193 196 / 0.14);
+  color: #fff;
+}
+
+.cta .secondary {
+  border-color: rgb(255 255 255 / 0.42);
+}
+
+.cta .secondary:hover {
+  border-color: #fff;
+  background: rgb(255 255 255 / 0.08);
+}
+
+.cta .secondary::after {
+  background: linear-gradient(100deg, transparent, rgb(83 178 179 / 0.22), transparent);
+}
+
+@keyframes heroIn {
+  from { transform: scale(1.1); }
+  to { transform: scale(1.01); }
+}
+
+@keyframes heroDrift {
+  from { transform: scale(1.01) translate3d(0, 0, 0); }
+  to { transform: scale(1.06) translate3d(-1.2%, 0, 0); }
+}
+
+@keyframes heroUp {
+  from { opacity: 0; transform: translateY(24px); filter: blur(9px); }
+  to { opacity: 1; transform: none; filter: blur(0); }
+}
+
+@media (max-width: 1080px) {
+  .inner { max-width: none; }
+}
+
+@media (max-width: 760px) {
+  .hero { min-height: 0; }
+  .wrap { padding: 130px 24px 64px; }
+}
+
+@media (max-width: 480px) {
+  .wrap { padding-right: 18px; padding-left: 18px; }
+  .cta a { padding: 13px 22px; font-size: 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero .image,
+  .inner,
+  .inner > * {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}

@@ -53,7 +53,7 @@ export function SecHead({
       <Kicker onDark={onDark}>{kicker}</Kicker>
       <h2
         className={cn(
-          "text-[clamp(29px,4.3vw,50px)] font-extralight leading-[1.12] tracking-[-0.03em]",
+          "md:text-[42px] text-[28px] font-extralight leading-[1.12] tracking-[-0.03em]",
           onDark && "text-white"
         )}
       >

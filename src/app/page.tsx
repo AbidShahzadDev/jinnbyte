@@ -4,10 +4,10 @@ import {
   AtAGlance,
   Clients,
   ContactSection,
-  Hero,
   Recognition,
   WhyJinnByte,
 } from "@/components/home/sections";
+import { Hero } from "@/components/home/hero";
 import { ImpactCarousel } from "@/components/home/impact-carousel";
 import { SolutionsGrid } from "@/components/home/solutions-grid";
 import { Testimonials } from "@/components/home/testimonials";

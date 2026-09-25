@@ -95,7 +95,7 @@ export function SectionHead({
       {kicker ? <Kicker onDark={onDark}>{kicker}</Kicker> : null}
       <h2
         className={cn(
-          "text-[clamp(29px,4.3vw,50px)] font-extralight tracking-[-0.03em]",
+          "md:text-[42px] text-[28px] font-extralight tracking-[-0.03em]",
           onDark && "text-white"
         )}
       >

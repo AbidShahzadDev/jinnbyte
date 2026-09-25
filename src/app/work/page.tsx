@@ -67,10 +67,9 @@ export default function WorkPage() {
                 <h1 className="mt-5 text-[clamp(28px,8vw,40px)] font-extralight leading-[1.07] tracking-[-0.035em] text-white max-[381px]:text-[26px] min-[641px]:mt-6.5 min-[641px]:max-w-[14ch] min-[641px]:text-[clamp(36px,4.7vw,60px)]">
                   {hero.title}
                 </h1>
-              </div>
-              <div>
+              <div className="mt-5 max-w-[50ch] min-[641px]:mt-6.5">
                 <hr className="mb-7 h-px w-16 border-0 bg-brand-on-dark" />
-                <p className="max-w-[50ch] text-[15px] font-light leading-[1.78] text-white/62 min-[641px]:text-base">
+                <p className="max-w-[50ch] text-[17px] font-light leading-[1.78] text-white/62 min-[641px]:text-base">
                   {hero.lede}
                 </p>
                 <div className="mt-8.5 flex flex-wrap gap-3.5 max-[381px]:flex-col">
@@ -88,6 +87,7 @@ export default function WorkPage() {
                   </ButtonLink>
                 </div>
               </div>
+              </div>
             </div>
           </div>
         </Container>
@@ -104,7 +104,7 @@ export default function WorkPage() {
                   <div className="accent-underscore mb-5.5 font-sans text-[11.5px] font-medium uppercase tracking-[0.22em] text-brand-on-dark max-[641px]:mb-4">
                     {cta.kicker}
                   </div>
-                  <h2 className="max-w-[15ch] text-[clamp(26px,7vw,36px)] font-extralight leading-[1.14] tracking-[-0.03em] text-white min-[641px]:text-[clamp(30px,3.4vw,46px)]">
+                  <h2 className="md:text-[42px] text-[28px] font-extralight tracking-[-0.025em] text-white">
                     {cta.title}
                   </h2>
                 </div>

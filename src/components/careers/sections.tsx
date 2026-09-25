@@ -111,7 +111,7 @@ export function CareersHero() {
                   <em className="text-brand-on-dark not-italic">{hero.titleAccent}</em>
                 </h1>
                 <AbRule className="mt-7.5 mb-7" />
-                <p className="max-w-[46ch] text-[16px] font-light leading-[1.78] text-white/62">
+                <p className="max-w-[46ch] text-[17px] font-light leading-[1.78] text-white/62">
                   {hero.lede}
                 </p>
                 <div className="mt-8.5 flex flex-wrap gap-3.5 max-[481px]:w-full max-[481px]:[&>a]:flex-auto max-[481px]:[&>a]:justify-center">
@@ -159,7 +159,7 @@ export function WhatToExpect() {
           <CrSplit>
             <div className="max-w-[660px]">
               <Kicker>{expect.kicker}</Kicker>
-              <h2 className="text-[clamp(29px,4.3vw,50px)] font-extralight leading-[1.12] tracking-[-0.03em]">
+              <h2 className="md:text-[42px] text-[28px] font-extralight leading-[1.12] tracking-[-0.03em]">
                 {expect.title}
               </h2>
             </div>
@@ -204,7 +204,7 @@ export function CareersCulture() {
             <CrSplit>
               <div>
                 <Kicker onDark>{culture.kicker}</Kicker>
-                <h2 className="mt-4.5 max-w-[14ch] text-[clamp(29px,4.3vw,50px)] font-extralight leading-[1.12] tracking-[-0.03em] text-white">
+                <h2 className="mt-4.5 max-w-[14ch] md:text-[42px] text-[28px] font-extralight leading-[1.12] tracking-[-0.03em] text-white">
                   {culture.title}
                 </h2>
                 <AbRule className="mt-6.5" />
@@ -263,7 +263,7 @@ export function HowWeHire() {
           <CrSplit>
             <div className="max-w-[660px]">
               <Kicker>{hiring.kicker}</Kicker>
-              <h2 className="text-[clamp(29px,4.3vw,50px)] font-extralight leading-[1.12] tracking-[-0.03em]">
+              <h2 className="md:text-[42px] text-[28px] font-extralight leading-[1.12] tracking-[-0.03em]">
                 {hiring.title}
               </h2>
             </div>
@@ -336,7 +336,7 @@ export function OpenApplications() {
             <div className="grid items-end gap-11 max-[981px]:gap-9 min-[1081px]:grid-cols-[0.95fr_1.05fr] min-[1081px]:gap-21">
               <div>
                 <Kicker onDark>{apply.kicker}</Kicker>
-                <h2 className="mt-4 max-w-[15ch] text-[clamp(30px,3.4vw,46px)] font-extralight leading-[1.14] tracking-[-0.03em] text-white max-[481px]:text-[22px]">
+                <h2 className="mt-4 max-w-[15ch] md:text-[42px] text-[28px] font-extralight leading-[1.14] tracking-[-0.03em] text-white">
                   {apply.title}
                 </h2>
               </div>

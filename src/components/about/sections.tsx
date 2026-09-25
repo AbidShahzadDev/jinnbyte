@@ -122,7 +122,7 @@ export function AboutHero() {
           <h1 className="mb-6 text-[clamp(36px,4.6vw,52px)] font-extralight leading-[1.06] tracking-[-0.035em] text-white">
             <Lines lines={hero.title} />
           </h1>
-          <p className="max-w-[60ch] text-[clamp(16px,1.9vw,18.5px)] font-light leading-[1.72] text-white/78">
+          <p className="max-w-[60ch] text-[clamp(16px,1.9vw,17px)] font-light leading-[1.72] text-white/78">
             {hero.lede}
           </p>
           <div className="mt-8.5">
@@ -166,7 +166,7 @@ export function WhereWeCreateValue() {
           <AbSplit>
             <div>
               <SectionKicker>{value.kicker}</SectionKicker>
-              <h2 className="mt-4 text-[clamp(29px,4.3vw,50px)] font-extralight leading-[1.12] tracking-[-0.03em]">
+              <h2 className="mt-4 md:text-[42px] text-[28px] font-extralight leading-[1.12] tracking-[-0.03em]">
                 {value.title}
               </h2>
             </div>
@@ -230,7 +230,7 @@ export function HowWeThink() {
             <AbSplit>
               <div>
                 <SectionKicker onDark>{think.kicker}</SectionKicker>
-                <h2 className="mt-4.5 max-w-[16ch] text-[clamp(29px,4.3vw,50px)] font-extralight leading-[1.12] tracking-[-0.03em] text-white">
+                <h2 className="mt-4.5 max-w-[16ch] md:text-[42px] text-[28px]  font-extralight leading-[1.12] tracking-[-0.03em] text-white">
                   <Lines lines={think.title} />
                 </h2>
                 <AbRule />
@@ -281,7 +281,7 @@ export function WhatWeBelieve() {
         <AbSplit>
           <Reveal>
             <SectionKicker>{believe.kicker}</SectionKicker>
-            <h2 className="mt-4.5 max-w-[15ch] text-[clamp(30px,3.6vw,44px)] font-extralight leading-[1.12] tracking-[-0.03em]">
+            <h2 className="mt-4.5 max-w-[15ch] md:text-[42px] text-[28px]  font-extralight leading-[1.12] tracking-[-0.03em]">
               <Lines lines={believe.title} />
             </h2>
           </Reveal>
@@ -376,7 +376,7 @@ export function OurTeam() {
           <AbSplit>
             <div>
               <SectionKicker>{team.kicker}</SectionKicker>
-              <h2 className="mt-4 text-[clamp(29px,4.3vw,50px)] font-extralight leading-[1.12] tracking-[-0.03em]">
+              <h2 className="mt-4 md:text-[42px] text-[28px] font-extralight leading-[1.12] tracking-[-0.03em]">
                 {team.title}
               </h2>
             </div>
@@ -407,7 +407,7 @@ export function OurTeam() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`${m.name} on LinkedIn`}
-                    className="absolute right-3 bottom-3 z-[2] flex h-9 w-9 translate-y-2 items-center justify-center bg-brand opacity-0 transition-[opacity,transform,background,translate,scale] duration-350 ease-brand group-hover:translate-y-0 group-hover:opacity-100 hover:bg-brand-deep focus-visible:translate-y-0 focus-visible:opacity-100 rounded-full"
+                    className="absolute right-3 bottom-3 z-[2] flex h-9 w-9 translate-y-2 items-center justify-center bg-brand opacity-0 transition-[opacity,transform,background,translate,scale] duration-350 ease-brand group-hover:translate-y-0 group-hover:opacity-100 hover:bg-brand-deep focus-visible:translate-y-0 focus-visible:opacity-100 rounded-sm"
                   >
                     <svg viewBox="0 0 24 24" aria-hidden className="h-4 w-4 fill-white">
                       <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95C20.4 8.75 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2-3.3-2 0-2.3 1.57-2.3 3.2V21H9z" />
@@ -439,7 +439,7 @@ export function OurCulture() {
             <AbSplit>
               <div>
                 <SectionKicker onDark>{culture.kicker}</SectionKicker>
-                <h2 className="mt-4.5 max-w-[14ch] text-[clamp(28px,3.4vw,44px)] font-extralight leading-[1.12] tracking-[-0.03em] text-white">
+                <h2 className="mt-4.5 max-w-[14ch] md:text-[42px] text-[28px]  font-extralight leading-[1.12] tracking-[-0.03em] text-white">
                   <Lines lines={culture.title} />
                 </h2>
                 <AbRule />
@@ -510,7 +510,7 @@ export function OurImpact() {
           </div>
           <div>
             <SectionKicker>{impact.kicker}</SectionKicker>
-            <h2 className="max-w-[15ch] text-[clamp(29px,4.3vw,50px)] font-extralight leading-[1.12] tracking-[-0.03em]">
+            <h2 className="max-w-[15ch] md:text-[42px] text-[28px] font-extralight leading-[1.12] tracking-[-0.03em]">
               <Lines lines={impact.title} />
             </h2>
             {impact.paragraphs.map((p, i) => (
@@ -535,7 +535,7 @@ export function AboutCta() {
       <Container>
         <Reveal className="mx-auto max-w-[780px] text-center">
           <SectionKicker className="mb-4 flex justify-center">{cta.kicker}</SectionKicker>
-          <h2 className="mb-5 text-[clamp(30px,4.2vw,52px)] font-extralight leading-[1.08] tracking-[-0.03em]">
+          <h2 className="mb-5 md:text-[42px] text-[28px]  font-extralight leading-[1.08] tracking-[-0.03em]">
             {cta.title}
           </h2>
           <p className="mx-auto mb-8 max-w-[52ch] text-[17px] font-light leading-[1.72] text-ink-soft">

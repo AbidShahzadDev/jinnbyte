@@ -161,10 +161,10 @@ export function ImpactCarousel({
           onFocusCapture={() => setPaused(true)}
           onBlurCapture={() => setPaused(false)}
         >
-          <Reveal className="mb-5.5 flex flex-col items-start justify-between gap-5.5 border-b border-line pb-5 min-[881px]:flex-row min-[881px]:items-end min-[881px]:gap-[46px]">
+          <Reveal className="mb-5.5 flex flex-col items-start justify-between gap-5.5 border-b border-line md:pb-11 pb-8 min-[881px]:flex-row min-[881px]:items-end min-[881px]:gap-[46px]">
             <div className="min-w-full">
               <SectionKicker className="mb-2.5">{impact.kicker}</SectionKicker>
-              <h2 className="text-[clamp(28px,4vw,50px)] font-extralight leading-[1.08] tracking-[-0.03em] max-[620px]:whitespace-normal min-[621px]:whitespace-nowrap">
+              <h2 className="md:text-[42px] text-[36px] font-extralight leading-[1.08] tracking-[-0.03em] max-[620px]:whitespace-normal min-[621px]:whitespace-nowrap">
                 {impact.title}
               </h2>
               <div className="block md:flex justify-between items-end gap-5.5 w-full min-w-full">
