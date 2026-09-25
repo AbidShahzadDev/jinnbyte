@@ -387,7 +387,7 @@ export function OurTeam() {
         <ul className="grid grid-cols-1 gap-x-6 gap-y-5.5 min-[761px]:grid-cols-2 min-[981px]:grid-cols-3 min-[1201px]:grid-cols-4">
           {team.members.map((m, i) => (
             <Reveal as="li" key={m.name} delay={((i % 4) + 1) as 1 | 2 | 3 | 4} className="group relative">
-              <div className="relative aspect-[4/4.6] overflow-hidden border border-line bg-soft-2">
+              <div className="relative aspect-[4/4.6] overflow-hidden border border-line bg-soft-2 rounded-xl">
                 {m.photo ? (
                   <Image
                     src={m.photo}
@@ -407,7 +407,7 @@ export function OurTeam() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`${m.name} on LinkedIn`}
-                    className="absolute right-3 bottom-3 z-[2] flex h-9 w-9 translate-y-2 items-center justify-center bg-brand opacity-0 transition-[opacity,transform,background,translate,scale] duration-350 ease-brand group-hover:translate-y-0 group-hover:opacity-100 hover:bg-brand-deep focus-visible:translate-y-0 focus-visible:opacity-100"
+                    className="absolute right-3 bottom-3 z-[2] flex h-9 w-9 translate-y-2 items-center justify-center bg-brand opacity-0 transition-[opacity,transform,background,translate,scale] duration-350 ease-brand group-hover:translate-y-0 group-hover:opacity-100 hover:bg-brand-deep focus-visible:translate-y-0 focus-visible:opacity-100 rounded-full"
                   >
                     <svg viewBox="0 0 24 24" aria-hidden className="h-4 w-4 fill-white">
                       <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95C20.4 8.75 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2-3.3-2 0-2.3 1.57-2.3 3.2V21H9z" />

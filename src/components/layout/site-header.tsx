@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 
-import { BUTTON_SIZES } from "@/components/ui/button";
+import { ButtonLink } from "@/components/ui/button";
 import { cn } from "@/lib/cn";
 import { navItems, contact } from "@/lib/site";
 
@@ -36,13 +36,12 @@ export function SiteHeader() {
   }, []);
 
   useEffect(() => {
-    let ticking = false;
+    let frame: number | null = null;
     const handler = () => {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(() => {
+      if (frame !== null) return;
+      frame = requestAnimationFrame(() => {
         onScroll();
-        ticking = false;
+        frame = null;
       });
     };
 
@@ -50,10 +49,11 @@ export function SiteHeader() {
     window.addEventListener("scroll", handler, { passive: true });
     window.addEventListener("resize", handler);
     return () => {
+      if (frame !== null) cancelAnimationFrame(frame);
       window.removeEventListener("scroll", handler);
       window.removeEventListener("resize", handler);
     };
-  }, [onScroll]);
+  }, [onScroll, pathname]);
 
   // Close the mobile panel when the viewport grows past the breakpoint.
   useEffect(() => {
@@ -67,27 +67,23 @@ export function SiteHeader() {
   const isCurrent = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
-  // Each page's template cuts the button differently, and the header follows it.
-  const ctaSize = pathname.startsWith("/work/")
-    ? BUTTON_SIZES.case
-    : pathname === "/work"
-      ? BUTTON_SIZES.classic
-      : BUTTON_SIZES.default;
+  // Use the homepage treatment everywhere; an open menu needs a light surface.
+  const transparent = overHero && !menuOpen;
 
   return (
     <header
       className={cn(
         "sticky top-0 z-[70] border-b border-transparent transition-[background-color,border-color,backdrop-filter] duration-350",
-        overHero
+        transparent
           ? "bg-transparent"
           : "bg-white/72 backdrop-blur-[18px] backdrop-saturate-[180%]",
-        scrolled && !overHero && "border-line-soft bg-white/90"
+        (scrolled || menuOpen) && !transparent && "border-line-soft bg-white/90"
       )}
     >
       <div className="mx-auto flex h-19 w-full max-w-site items-center justify-between gap-6 px-8 max-[761px]:px-6 max-[481px]:px-4.5">
-        <Link href="/" aria-label="JinnByte home" className="flex flex-none items-center">
+        <Link href="/" aria-label="JinnByte home" onClick={() => setMenuOpen(false)} className="flex flex-none items-center">
           <Image
-            src={overHero ? "/images/logo-dark.png" : "/images/logo-light.png"}
+            src={transparent ? "/images/logo-dark.png" : "/images/logo-light.png"}
             alt="JinnByte"
             width={120}
             height={26}
@@ -98,9 +94,10 @@ export function SiteHeader() {
         </Link>
 
         <nav
+          aria-label="Main navigation"
           className={cn(
             "hidden gap-[34px] text-sm font-normal min-[1081px]:flex",
-            overHero ? "text-white/76" : "text-ink-soft"
+            transparent ? "text-white/76" : "text-ink-soft"
           )}
         >
           {navItems.map((item) => (
@@ -110,8 +107,8 @@ export function SiteHeader() {
               aria-current={isCurrent(item.href) ? "page" : undefined}
               className={cn(
                 "group relative transition-[color,transform,translate,scale] duration-250 ease-brand hover:-translate-y-px",
-                isCurrent(item.href) && (overHero ? "text-white" : "text-ink"),
-                overHero ? "hover:text-white" : "hover:text-ink"
+                isCurrent(item.href) && (transparent ? "text-white" : "text-ink"),
+                transparent ? "hover:text-white" : "hover:text-ink"
               )}
             >
               {item.label}
@@ -119,7 +116,7 @@ export function SiteHeader() {
                 className={cn(
                   "absolute -bottom-1.5 left-0 h-px transition-[width] duration-350 ease-brand group-hover:w-full",
                   isCurrent(item.href) ? "w-full" : "w-0",
-                  overHero ? "bg-brand-on-dark" : "bg-brand"
+                  transparent ? "bg-brand-on-dark" : "bg-brand"
                 )}
               />
             </Link>
@@ -135,7 +132,7 @@ export function SiteHeader() {
             aria-controls="mobile-nav"
             className={cn(
               "inline-flex h-9.5 w-9.5 cursor-pointer items-center justify-center rounded-md border bg-transparent min-[1081px]:hidden",
-              overHero ? "border-white/34 text-white" : "border-line text-ink"
+              transparent ? "border-white/34 text-white" : "border-line text-ink"
             )}
           >
             <svg viewBox="0 0 24 24" className="h-4.5 w-4.5 fill-none stroke-current stroke-[1.6] [stroke-linecap:round]">
@@ -143,18 +140,18 @@ export function SiteHeader() {
             </svg>
           </button>
 
-          <a
+          <ButtonLink
             href={contact.ctaHref}
+            variant={transparent ? "ghost" : "brand"}
             className={cn(
-              "hidden items-center gap-[0.6em] rounded-none border font-display uppercase tracking-[0.11em] transition-all duration-300 ease-brand min-[1081px]:inline-flex",
-              ctaSize,
-              overHero
-                ? "border-white/42 bg-white/8 text-white backdrop-blur-[10px] hover:border-white hover:bg-white hover:text-ink hover:shadow-[0_12px_30px_rgb(0_0_0/0.32)]"
-                : "border-transparent bg-brand text-white hover:-translate-y-0.5 hover:bg-brand-hover hover:shadow-brand"
+              "hidden min-[1081px]:inline-flex",
+              transparent
+                ? "bg-white/8"
+                : "shadow-[inset_0_0_0_1px_var(--color-brand)] hover:bg-transparent hover:text-brand-deep hover:shadow-[inset_0_0_0_1px_var(--color-brand)]"
             )}
           >
             Let&rsquo;s talk
-          </a>
+          </ButtonLink>
         </div>
       </div>
 
@@ -163,13 +160,13 @@ export function SiteHeader() {
         aria-hidden
         className={cn(
           "pointer-events-none absolute -bottom-px left-0 right-0 h-0.5 origin-left bg-gradient-to-r from-brand-deep to-brand transition-opacity duration-400 ease-brand",
-          overHero ? "opacity-0" : "opacity-100"
+          transparent ? "opacity-0" : "opacity-100"
         )}
         style={{ transform: `scaleX(${progress})` }}
       />
 
       {menuOpen ? (
-        <div id="mobile-nav" className="border-t border-line-soft bg-paper min-[1081px]:hidden">
+        <nav id="mobile-nav" aria-label="Mobile navigation" className="max-h-[calc(100dvh-76px)] overflow-y-auto border-t border-line-soft bg-paper min-[1081px]:hidden">
           <div className="mx-auto flex w-full max-w-site flex-col gap-0.5 px-8 pt-3.5 pb-4.5 max-[761px]:px-6 max-[481px]:px-4.5">
             {navItems.map((item) => (
               <Link
@@ -185,18 +182,15 @@ export function SiteHeader() {
                 {item.label}
               </Link>
             ))}
-            <a
+            <ButtonLink
               href={contact.ctaHref}
               onClick={() => setMenuOpen(false)}
-              className={cn(
-                "mt-3.5 inline-flex items-center justify-center rounded-none bg-brand font-display uppercase tracking-[0.11em] text-white",
-                ctaSize
-              )}
+              className="mt-3.5 w-full justify-center"
             >
               Let&rsquo;s talk
-            </a>
+            </ButtonLink>
           </div>
-        </div>
+        </nav>
       ) : null}
     </header>
   );

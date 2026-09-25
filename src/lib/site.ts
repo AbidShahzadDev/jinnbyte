@@ -30,18 +30,8 @@ export const navItems: readonly NavItem[] = [
   { href: "/careers", label: "Careers" },
 ] as const;
 
-/**
- * The footer carries a longer list than the header, and every template except
- * the home page agrees on it.
- */
-export const footerNavItems: readonly NavItem[] = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/solutions", label: "Solutions" },
-  { href: "/work", label: "Portfolio" },
-  { href: "/careers", label: "Careers" },
-  { href: "https://jinnbyte.com/blog/", label: "Blog" },
-] as const;
+/** The homepage template uses the same navigation in the header and footer. */
+export const footerNavItems = navItems;
 
 export const contact = {
   emails: [

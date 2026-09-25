@@ -281,7 +281,7 @@ export function ImpactCarousel({
             ref={railRef}
             role="tablist"
             aria-label="Case studies"
-            className="mt-5 grid gap-4 max-[880px]:auto-cols-[minmax(112px,1fr)] max-[880px]:grid-flow-col max-[880px]:overflow-x-auto max-[880px]:[-ms-overflow-style:none] max-[880px]:[scrollbar-width:none] min-[881px]:grid-cols-6 [&::-webkit-scrollbar]:hidden"
+            className="mt-5 flex md:flex-nowrap flex-wrap gap-4 justify-between  [&::-webkit-scrollbar]:hidden"
           >
             {slides.map((s, i) => (
               <button
@@ -291,7 +291,7 @@ export function ImpactCarousel({
                 aria-selected={i === active}
                 tabIndex={i === active ? 0 : -1}
                 onClick={() => (i === active ? setPaused(false) : go(i))}
-                className="group block min-w-0 cursor-pointer border-0 bg-transparent p-0 text-left"
+                className="group block min-w-0 cursor-pointer border-0 bg-transparent p-0 text-left md:w-full w-3/12"
               >
                 <b
                   className={cn(

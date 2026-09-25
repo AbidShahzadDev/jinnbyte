@@ -17,7 +17,7 @@ const linkClass =
 
 export function SiteFooter() {
   return (
-    <footer className="bg-soft pt-[70px] pb-10">
+    <footer className="bg-soft pt-17.5 pb-10">
       <Container>
         <div className="grid gap-11 max-[861px]:gap-9 min-[981px]:grid-cols-[1.6fr_1fr_1fr_1.3fr] min-[761px]:max-[981px]:grid-cols-2 max-[761px]:grid-cols-1">
           <div>
@@ -63,7 +63,7 @@ export function SiteFooter() {
             <ColumnHeading>Address</ColumnHeading>
             <address className="not-italic">
               {offices.map((o) => (
-                <div key={o.city} className="mb-3.75 text-[13.5px] leading-[1.5] text-ink-soft">
+                <div key={o.city} className="mb-3.75 text-[13.5px] leading-normal text-ink-soft">
                   <b className="block font-display text-[12.5px] font-normal uppercase tracking-[0.06em] text-ink">
                     {o.city}
                   </b>
@@ -76,7 +76,7 @@ export function SiteFooter() {
 
         <div className="md:mt-13.5 mt-4 flex flex-wrap justify-between gap-3 border-t border-line-soft pt-6.5 text-[12.5px] text-ink-faint">
           <span>&copy; {site.name}. All Rights Reserved.</span>
-          <nav className="flex flex-wrap gap-5.5">
+          <nav aria-label="Footer navigation" className="flex flex-wrap gap-5.5">
             {footerNavItems.map((item) =>
               item.href.startsWith("http") ? (
                 <a
