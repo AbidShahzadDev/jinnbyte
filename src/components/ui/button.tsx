@@ -8,15 +8,17 @@ const BASE =
 
 /**
  * Each template re-cuts the button, so the metrics travel together: most pages
- * run the squared 13px cut and shrink it below 480px, case studies run it a
- * half-step smaller, and the portfolio page never re-cut the original at all.
+ * run the 13px cut on a 10px radius and shrink it below 480px, case studies run
+ * it a half-step smaller and square, and the portfolio page never re-cut the
+ * original at all. The header's own CTA stays square everywhere — it overrides
+ * the radius itself.
  */
 export const BUTTON_SIZES = {
   default:
-    "rounded-none px-[30px] py-[15px] text-[13px] tracking-[0.11em] max-[481px]:px-[22px] max-[481px]:py-[13px] max-[481px]:text-[12px]",
+    "rounded-[10px] px-[30px] py-[15px] text-[13px] tracking-[0.11em] max-[481px]:px-[22px] max-[481px]:py-[13px] max-[481px]:text-[12px]",
   case: "rounded-none px-[26px] py-[14px] text-[12.5px] tracking-[0.11em] max-[481px]:px-[22px] max-[481px]:py-[13px] max-[481px]:text-[12px]",
   classic:
-    " px-[26px] py-[13px] text-[14px] tracking-[0.06em] max-[381px]:px-[18px] max-[381px]:py-[12px] max-[381px]:text-[13px]",
+    "rounded-[10px] px-[26px] py-[13px] text-[14px] tracking-[0.06em] max-[381px]:px-[18px] max-[381px]:py-[12px] max-[381px]:text-[13px]",
 } as const;
 
 export type ButtonSize = keyof typeof BUTTON_SIZES;
@@ -24,6 +26,9 @@ export type ButtonSize = keyof typeof BUTTON_SIZES;
 const VARIANTS = {
   /** Solid teal — the primary call to action. */
   brand: "bg-brand text-white hover:bg-brand-hover hover:-translate-y-0.5 hover:shadow-brand",
+  /** Filled teal with the home page's outlined, translucent hover wash. */
+  brandWash:
+    "bg-brand text-white shadow-[inset_0_0_0_1px_var(--color-brand)] hover:border-brand hover:bg-[rgb(120_193_196/0.14)] hover:text-white hover:-translate-y-0.5 hover:shadow-none",
   /** Hairline outline on light surfaces. */
   line: "bg-transparent text-ink border-line hover:border-ink hover:-translate-y-0.5",
   /** Hairline outline on dark surfaces. */

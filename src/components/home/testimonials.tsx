@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState, type MouseEvent } from "react";
@@ -37,11 +37,14 @@ const ARROW =
   "flex h-[46px] w-[46px] cursor-pointer items-center justify-center border border-white/22 bg-transparent text-[15px] text-white transition-[background,border-color,color,opacity,transform,translate,scale] duration-300 ease-brand enabled:hover:border-brand enabled:hover:bg-brand disabled:cursor-default disabled:opacity-28";
 
 /**
- * "Client voice" — a peek carousel on the dark band: three cards visible with
+ * "Client voice" â€” a peek carousel on the dark band: three cards visible with
  * the next one edging in. Scrolling is native with snap points so touch and
  * keyboard both work; the pill dots double as a progress readout.
  */
-export function Testimonials({ sectionClassName }: { sectionClassName?: string } = {}) {
+export function Testimonials({
+  sectionClassName,
+  headingClassName,
+}: { sectionClassName?: string; headingClassName?: string } = {}) {
   const { testimonials } = home;
   const railRef = useRef<HTMLDivElement>(null);
   const [page, setPage] = useState(0);
@@ -97,7 +100,7 @@ export function Testimonials({ sectionClassName }: { sectionClassName?: string }
       <Container className="relative">
         <Reveal className="md:mb-11 mb-8 max-w-[660px]">
           <SectionKicker onDark>{testimonials.kicker}</SectionKicker>
-          <h2 className="mt-4 md:text-[42px] text-[28px] font-extralight leading-[1.08] tracking-[-0.03em] text-white">
+          <h2 className={cn("mt-4 md:text-[42px] text-[28px] font-extralight leading-[1.08] tracking-[-0.03em] text-white", headingClassName)}>
             {testimonials.title.map((line, i) => (
               <span key={i} className="block">
                 {line}
@@ -144,7 +147,7 @@ export function Testimonials({ sectionClassName }: { sectionClassName?: string }
                 ) : null}
               </div>
 
-              <p className="mb-5 flex-1 text-[16px] leading-[1.5] text-white/90">{q.quote}</p>
+              <p className="mb-5 flex-1 text-[15px] leading-[1.5] text-white/90">{q.quote}</p>
 
               <div className="flex items-center gap-3.5 border-t border-white/14 pt-5">
                 <div className="min-w-0 flex-1">

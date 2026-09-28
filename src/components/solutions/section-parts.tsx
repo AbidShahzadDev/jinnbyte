@@ -60,7 +60,12 @@ export function SecHead({
         {title}
       </h2>
       {lede ? (
-        <p className={cn("mt-5 text-[17px] font-light", onDark ? "text-white/66" : "text-ink-soft")}>
+        <p
+          className={cn(
+            "mt-5 text-[16.5px] leading-[1.72] font-light",
+            onDark ? "text-white/66" : "text-ink-soft"
+          )}
+        >
           {lede}
         </p>
       ) : null}

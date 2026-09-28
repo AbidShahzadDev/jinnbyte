@@ -18,6 +18,7 @@ export type ImpactSlide = {
   headline: string;
   desc: string;
   kpi: string;
+  accent: string;
   kpiLabel: string;
   href: string;
   image: string;
@@ -369,6 +370,7 @@ export const home: Home = {
         "headline": "Digitising 100% of the curriculum to extend learning beyond the classroom.",
         "desc": "A connected foundational learning ecosystem combining gamified learning, teacher support and parent visibility around each child’s individual learning journey.",
         "kpi": "100%",
+        "accent": "96,208,212",
         "kpiLabel": "Curriculum digitised",
         "href": "/work/lingolane",
         "image": "/images/cases/lingolane-hero.webp",
@@ -380,6 +382,7 @@ export const home: Home = {
         "headline": "Bringing intelligence and structure to specialist interviews.",
         "desc": "Interview intelligence that gives hiring teams the knowledge, structure and confidence to assess candidates across specialist roles.",
         "kpi": "80%",
+        "accent": "140,150,242",
         "kpiLabel": "Reduction in hiring workflow time",
         "href": "/work/maslow",
         "image": "/images/cases/maslow-hero.webp",
@@ -391,6 +394,7 @@ export const home: Home = {
         "headline": "Turning fitness content into a complete recurring digital ecosystem.",
         "desc": "An end-to-end fitness ecosystem that transforms workout programmes into measurable, motivating and recurring digital experiences.",
         "kpi": "400%",
+        "accent": "92,214,162",
         "kpiLabel": "Increase in MRR",
         "href": "/work/buff",
         "image": "/images/cases/buff-hero.webp",
@@ -402,6 +406,7 @@ export const home: Home = {
         "headline": "Making relationship support more accessible and personal.",
         "desc": "An AI companion for the personal and relationship conversations people may not always have somewhere else to take.",
         "kpi": "80%",
+        "accent": "248,150,120",
         "kpiLabel": "Of conflicts resolved within Openline",
         "href": "/work/openline",
         "image": "/images/cases/openline-hero.webp",
@@ -413,6 +418,7 @@ export const home: Home = {
         "headline": "Combining personalized beauty intelligence with scalable user acquisition.",
         "desc": "A personalised AI beauty experience supported by a performance-driven influencer acquisition and growth ecosystem.",
         "kpi": "$1M+",
+        "accent": "198,142,236",
         "kpiLabel": "Revenue generated",
         "href": "/work/facebloom",
         "image": "/images/cases/facebloom-hero.webp",
@@ -424,6 +430,7 @@ export const home: Home = {
         "headline": "Connecting customers, technicians and service operations through one intelligent platform.",
         "desc": "A connected home-services ecosystem bringing customers, technicians, business operations and autonomous AI into one platform.",
         "kpi": "100%",
+        "accent": "246,192,78",
         "kpiLabel": "Inbound call coverage",
         "href": "/work/toptec",
         "image": "/images/cases/toptec-hero.webp",

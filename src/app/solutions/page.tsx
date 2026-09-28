@@ -1,6 +1,6 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
-import { SolutionsGrid } from "@/components/home/solutions-grid";
+import { SolutionsGrid, SOLUTIONS_PAGE_ACCENTS } from "@/components/home/solutions-grid";
 import { ImpactCarousel } from "@/components/home/impact-carousel";
 import { Testimonials } from "@/components/home/testimonials";
 import { RouteRoot } from "@/components/layout/route-root";
@@ -44,17 +44,27 @@ export default function SolutionsPage() {
       <JsonLd data={breadcrumbSchema([{ name: "Solutions", path: "/solutions" }])} />
 
       <SolutionsHero />
-      <SolutionsGrid content={solutions.capabilities} sectionClassName={SHARED_BAND} />
+      <SolutionsGrid
+        content={solutions.capabilities}
+        sectionClassName={SHARED_BAND}
+        headingClassName="md:max-w-[14.45em] md:text-[length:clamp(30px,3.6vw,42px)] md:leading-[1.13]"
+        ledeClassName="md:max-w-[52ch] md:text-[16.5px] md:leading-[1.72]"
+        accents={SOLUTIONS_PAGE_ACCENTS}
+      />
       <WhereWeHelp />
       <IndustriesStrip />
       <ImpactCarousel
         impact={solutions.impact}
-        sectionClassName={`py-[clamp(40px,5.6vh,72px)] ${SHARED_BAND}`}
+        sectionClassName={`md:py-[clamp(40px,5.6vh,72px)] ${SHARED_BAND}`}
+        headingClassName="md:leading-[1.13]"
       />
       <ProcessSteps />
       <WhySolutions />
       <TechStack />
-      <Testimonials sectionClassName={`py-[clamp(44px,6vh,72px)] ${SHARED_BAND}`} />
+      <Testimonials
+        sectionClassName={`md:py-[clamp(44px,6vh,72px)] ${SHARED_BAND}`}
+        headingClassName="md:leading-[1.12]"
+      />
       <Recognition />
       <SolutionsCta />
     </RouteRoot>

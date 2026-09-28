@@ -73,7 +73,7 @@ export default function WorkPage() {
                   {hero.lede}
                 </p>
                 <div className="mt-8.5 flex flex-wrap gap-3.5 max-[381px]:flex-col">
-                  <ButtonLink href="#work" variant="brand" size="classic" arrow className="max-[641px]:flex-auto max-[641px]:justify-center max-[381px]:w-full">
+                  <ButtonLink href="#work" variant="brandWash" size="classic" arrow className="max-[641px]:flex-auto max-[641px]:justify-center max-[381px]:w-full">
                     Browse the work
                   </ButtonLink>
                   <ButtonLink
@@ -113,7 +113,7 @@ export default function WorkPage() {
                     {cta.body}
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3.5 max-[641px]:[&>a]:flex-auto max-[641px]:[&>a]:justify-center max-[381px]:flex-col max-[381px]:[&>a]:w-full">
-                    <ButtonLink href="/#contact" variant="brand" size="classic" arrow>
+                    <ButtonLink href="/#contact" variant="brandWash" size="classic" arrow>
                       Discuss your project
                     </ButtonLink>
                     <ButtonLink href="/solutions" variant="ghost" size="classic" arrow>

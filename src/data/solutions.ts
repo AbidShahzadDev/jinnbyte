@@ -1,4 +1,4 @@
-/** Content for the /solutions route, lifted from the original solutions.html template. */
+﻿/** Content for the /solutions route, lifted from the original solutions.html template. */
 
 import type { SolutionCard, ImpactSlide } from "@/data/home";
 
@@ -114,25 +114,25 @@ export const solutions: Solutions = {
         "n": "01",
         "title": "Build a New Digital Product",
         "blurb": "Turn an opportunity into a working product through discovery, experience design, engineering, infrastructure and launch.",
-        "accent": "#53B2B3"
+        "accent": "#14A6A8"
       },
       {
         "n": "02",
         "title": "Modernize an Existing Platform",
         "blurb": "Improve aging systems, architecture and experiences to create a stronger foundation for continued growth.",
-        "accent": "#C39A5A"
+        "accent": "#E0960F"
       },
       {
         "n": "03",
         "title": "Introduce AI & Automation",
         "blurb": "Identify where intelligence can create meaningful value, then integrate AI and automation into the products and workflows already running the business.",
-        "accent": "#CB8878"
+        "accent": "#E55A3B"
       },
       {
         "n": "04",
         "title": "Connect Systems & Operations",
         "blurb": "Bring applications, APIs, data and workflows together so disconnected processes operate as one digital ecosystem.",
-        "accent": "#8E88C2"
+        "accent": "#7C7CE8"
       }
     ],
     "title": [
@@ -158,7 +158,7 @@ export const solutions: Solutions = {
           "viewBox": "0 0 24 24",
           "markup": "<path d=\"M3 6.2c3-1.3 6-1.3 9 0 3-1.3 6-1.3 9 0v12.6c-3-1.3-6-1.3-9 0-3-1.3-6-1.3-9 0z\"></path><path d=\"M12 6.2v12.6\"></path>"
         },
-        "cta": "See related work →"
+        "cta": "See related work â†’"
       },
       {
         "cat": "hr",
@@ -169,7 +169,7 @@ export const solutions: Solutions = {
           "viewBox": "0 0 24 24",
           "markup": "<circle cx=\"9\" cy=\"8\" r=\"3.1\"></circle><path d=\"M3.6 20a5.4 5.4 0 0 1 10.8 0\"></path><circle cx=\"17\" cy=\"9\" r=\"2.4\"></circle><path d=\"M16.2 20a5 5 0 0 1 4.4-6\"></path>"
         },
-        "cta": "See related work →"
+        "cta": "See related work â†’"
       },
       {
         "cat": "fit",
@@ -180,7 +180,7 @@ export const solutions: Solutions = {
           "viewBox": "0 0 24 24",
           "markup": "<path d=\"M4 9v6M7 7.5v9M17 7.5v9M20 9v6M7 12h10\"></path>"
         },
-        "cta": "See related work →"
+        "cta": "See related work â†’"
       },
       {
         "cat": "field",
@@ -191,7 +191,7 @@ export const solutions: Solutions = {
           "viewBox": "0 0 24 24",
           "markup": "<path d=\"M4 11l8-6 8 6\"></path><path d=\"M6 10v9h12v-9\"></path><path d=\"M10.5 19v-4h3v4\"></path>"
         },
-        "cta": "See related work →"
+        "cta": "See related work â†’"
       },
       {
         "cat": "ecom",
@@ -202,7 +202,7 @@ export const solutions: Solutions = {
           "viewBox": "0 0 24 24",
           "markup": "<circle cx=\"9\" cy=\"20\" r=\"1.4\"></circle><circle cx=\"17.5\" cy=\"20\" r=\"1.4\"></circle><path d=\"M3 4h2.2l2.1 11h10l1.9-8H6.2\"></path>"
         },
-        "cta": "See related work →"
+        "cta": "See related work â†’"
       },
       {
         "cat": "wellness",
@@ -213,7 +213,7 @@ export const solutions: Solutions = {
           "viewBox": "0 0 24 24",
           "markup": "<path d=\"M5 19c0-7.5 5.2-13 15-13 0 9.5-6 14-15 13z\"></path><path d=\"M5 19c4-5.5 8-8.5 12.5-10.5\"></path>"
         },
-        "cta": "See related work →"
+        "cta": "See related work â†’"
       },
       {
         "cat": "lifestyle",
@@ -224,7 +224,7 @@ export const solutions: Solutions = {
           "viewBox": "0 0 24 24",
           "markup": "<path d=\"M12 3.5l2.1 6.4 6.4 2.1-6.4 2.1L12 20.5l-2.1-6.4L3.5 12l6.4-2.1z\"></path>"
         },
-        "cta": "See related work →"
+        "cta": "See related work â†’"
       },
       {
         "cat": "local",
@@ -235,7 +235,7 @@ export const solutions: Solutions = {
           "viewBox": "0 0 24 24",
           "markup": "<path d=\"M12 21.5s6.8-6.3 6.8-11a6.8 6.8 0 1 0-13.6 0c0 4.7 6.8 11 6.8 11z\"></path><circle cx=\"12\" cy=\"10.5\" r=\"2.4\"></circle>"
         },
-        "cta": "See related work →"
+        "cta": "See related work â†’"
       }
     ]
   },
@@ -248,8 +248,9 @@ export const solutions: Solutions = {
         "chip": "Ed-Tech",
         "name": "LingoLane",
         "headline": "Extending foundational learning beyond the classroom.",
-        "desc": "A connected foundational learning ecosystem combining gamified learning, teacher support and parent visibility around each child’s individual learning journey.",
+        "desc": "A connected foundational learning ecosystem combining gamified learning, teacher support and parent visibility around each childâ€™s individual learning journey.",
         "kpi": "100%",
+        "accent": "96,208,212",
         "kpiLabel": "Curriculum digitised",
         "href": "/work/lingolane",
         "image": "/images/cases/lingolane-hero.webp",
@@ -261,6 +262,7 @@ export const solutions: Solutions = {
         "headline": "Bringing intelligence and structure to every interview.",
         "desc": "Interview intelligence that gives hiring teams the knowledge, structure and confidence to assess candidates across specialist roles.",
         "kpi": "80%",
+        "accent": "140,150,242",
         "kpiLabel": "Reduction in hiring workflow time",
         "href": "/work/maslow",
         "image": "/images/cases/maslow-hero.webp",
@@ -272,6 +274,7 @@ export const solutions: Solutions = {
         "headline": "Turning medical records into connected health intelligence.",
         "desc": "An AI-powered health records platform that turns uploaded medical documents into structured patient history, giving patients and doctors one clear view of the health journey.",
         "kpi": "100%",
+        "accent": "90,168,238",
         "kpiLabel": "Reports converted into structured records",
         "href": "/work/smfmed",
         "image": "https://images.unsplash.com/photo-1666886573531-48d2e3c2b684?fm=jpg&q=76&w=1600&auto=format&fit=crop",
@@ -283,6 +286,7 @@ export const solutions: Solutions = {
         "headline": "Turning fitness content into a complete digital ecosystem.",
         "desc": "An end-to-end fitness ecosystem that transforms workout programmes into measurable, motivating and recurring digital experiences.",
         "kpi": "400%",
+        "accent": "92,214,162",
         "kpiLabel": "Increase in MRR",
         "href": "/work/buff",
         "image": "/images/cases/buff-hero.webp",
@@ -294,6 +298,7 @@ export const solutions: Solutions = {
         "headline": "Making relationship support more accessible and personal.",
         "desc": "An AI companion for the personal and relationship conversations people may not always have somewhere else to take.",
         "kpi": "80%",
+        "accent": "248,150,120",
         "kpiLabel": "Of conflicts resolved within Openline",
         "href": "/work/openline",
         "image": "/images/cases/openline-hero.webp",
@@ -305,6 +310,7 @@ export const solutions: Solutions = {
         "headline": "Personalised beauty intelligence with scalable acquisition.",
         "desc": "A personalised AI beauty experience supported by a performance-driven influencer acquisition and growth ecosystem.",
         "kpi": "$1M+",
+        "accent": "198,142,236",
         "kpiLabel": "Revenue generated",
         "href": "/work/facebloom",
         "image": "/images/cases/facebloom-hero.webp",
@@ -316,6 +322,7 @@ export const solutions: Solutions = {
         "headline": "Connecting customers, technicians and service operations.",
         "desc": "A connected home-services ecosystem bringing customers, technicians, business operations and autonomous AI into one platform.",
         "kpi": "100%",
+        "accent": "246,192,78",
         "kpiLabel": "Inbound call coverage",
         "href": "/work/toptec",
         "image": "/images/cases/toptec-hero.webp",
@@ -339,7 +346,7 @@ export const solutions: Solutions = {
           "Feature prioritisation",
           "Success criteria"
         ],
-        "accent": "#53B2B3"
+        "accent": "#14A6A8"
       },
       {
         "n": "02",
@@ -352,7 +359,7 @@ export const solutions: Solutions = {
           "Integration planning",
           "Technology selection"
         ],
-        "accent": "#C39A5A"
+        "accent": "#E0960F"
       },
       {
         "n": "03",
@@ -365,7 +372,7 @@ export const solutions: Solutions = {
           "Sprint reviews",
           "Product validation"
         ],
-        "accent": "#CB8878"
+        "accent": "#E55A3B"
       },
       {
         "n": "04",
@@ -378,7 +385,7 @@ export const solutions: Solutions = {
           "Performance optimisation",
           "Ongoing enhancement"
         ],
-        "accent": "#8E88C2"
+        "accent": "#7C7CE8"
       }
     ]
   },
@@ -625,7 +632,7 @@ export const solutions: Solutions = {
     ]
   },
   "cta": {
-    "kicker": "Let’s build what’s next",
+    "kicker": "Letâ€™s build whatâ€™s next",
     "title": "Start with the challenge. Define the right solution.",
     "body": "Whether you are launching a new product, adding AI to existing operations or evolving the systems you already run, we can help define and engineer the path forward."
   }

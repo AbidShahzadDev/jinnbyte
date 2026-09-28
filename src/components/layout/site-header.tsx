@@ -144,7 +144,8 @@ export function SiteHeader() {
             href={contact.ctaHref}
             variant={transparent ? "ghost" : "brand"}
             className={cn(
-              "hidden min-[1081px]:inline-flex",
+              // The nav CTA is the one button the templates keep square.
+              "hidden rounded-none min-[1081px]:inline-flex",
               transparent
                 ? "bg-white/8"
                 : "shadow-[inset_0_0_0_1px_var(--color-brand)] hover:bg-transparent hover:text-brand-deep hover:shadow-[inset_0_0_0_1px_var(--color-brand)]"
@@ -185,7 +186,7 @@ export function SiteHeader() {
             <ButtonLink
               href={contact.ctaHref}
               onClick={() => setMenuOpen(false)}
-              className="mt-3.5 w-full justify-center"
+              className="mt-3.5 w-full justify-center rounded-none"
             >
               Let&rsquo;s talk
             </ButtonLink>

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -28,17 +28,20 @@ const ARROW =
   "flex h-11 w-11 cursor-pointer items-center justify-center border border-line bg-transparent text-[15px] text-ink transition-[background,border-color,color,transform,translate,scale] duration-300 ease-brand hover:border-brand hover:bg-brand hover:text-white";
 
 /**
- * "Proven impact" — one panel with a name rail beneath it. Each slide holds for
+ * "Proven impact" â€” one panel with a name rail beneath it. Each slide holds for
  * five seconds while its rail bar fills, then advances. Hovering, focusing,
  * hiding the tab or scrolling the section out of view pauses it.
  */
 export function ImpactCarousel({
   impact,
   sectionClassName,
+  headingClassName,
 }: {
   impact: ImpactContent;
   /** Lets /solutions add its one-screen band treatment. */
   sectionClassName?: string;
+  /** /solutions runs the heading a step looser than the home page does. */
+  headingClassName?: string;
 }) {
   const slides = impact.slides;
   const total = slides.length;
@@ -164,7 +167,7 @@ export function ImpactCarousel({
           <Reveal className="mb-5.5 flex flex-col items-start justify-between gap-5.5 border-b border-line md:pb-11 pb-8 min-[881px]:flex-row min-[881px]:items-end min-[881px]:gap-[46px]">
             <div className="min-w-full">
               <SectionKicker className="mb-2.5">{impact.kicker}</SectionKicker>
-              <h2 className="md:text-[42px] text-[36px] font-extralight leading-[1.08] tracking-[-0.03em] max-[620px]:whitespace-normal min-[621px]:whitespace-nowrap">
+              <h2 className={cn("md:text-[42px] text-[36px] font-extralight leading-[1.08] tracking-[-0.03em] max-[620px]:whitespace-normal min-[621px]:whitespace-nowrap", headingClassName)}>
                 {impact.title}
               </h2>
               <div className="block md:flex justify-between items-end gap-5.5 w-full min-w-full">
@@ -231,7 +234,10 @@ export function ImpactCarousel({
 
               <div className="mt-[clamp(20px,2.6vh,30px)] flex flex-col items-start gap-[clamp(26px,3.6vh,40px)]">
                 <div className="flex items-baseline gap-3.5">
-                  <b className="font-display text-[clamp(32px,3.2vw,46px)] font-extralight leading-none tracking-[-0.042em] whitespace-nowrap text-brand-on-dark">
+                  <b
+                    className="font-display text-[clamp(32px,3.2vw,46px)] font-extralight leading-none tracking-[-0.042em] whitespace-nowrap"
+                    style={{ color: `rgb(${slide.accent})` }}
+                  >
                     {slide.kpi}
                   </b>
                   <span className="line-clamp-2 min-h-[2.9em] max-w-[16em] text-[12.5px] leading-[1.45] text-white/50">
@@ -240,7 +246,7 @@ export function ImpactCarousel({
                 </div>
                 <Link
                   href={slide.href}
-                  className="inline-flex flex-none items-center gap-[0.7em] border border-white/32 bg-transparent px-6 py-3.25 font-display text-[12px] font-normal uppercase tracking-[0.14em] text-white transition-[background,border-color,gap] duration-300 ease-brand hover:gap-[1.1em] hover:border-brand hover:bg-brand"
+                  className="inline-flex flex-none items-center gap-[0.7em] rounded-[10px] border border-white/32 bg-transparent px-6 py-3.25 font-display text-[12px] font-normal uppercase tracking-[0.14em] text-white transition-[background,border-color,gap] duration-300 ease-brand hover:gap-[1.1em] hover:border-brand hover:bg-brand"
                 >
                   Read case study
                   <span aria-hidden>&rarr;</span>
@@ -253,7 +259,7 @@ export function ImpactCarousel({
                 <Image
                   key={s.name}
                   src={s.image}
-                  alt={i === shown ? `${s.name} — ${s.headline}` : ""}
+                  alt={i === shown ? `${s.name} â€” ${s.headline}` : ""}
                   fill
                   sizes="(max-width: 880px) 100vw, 45vw"
                   style={{ objectPosition: s.objectPosition }}

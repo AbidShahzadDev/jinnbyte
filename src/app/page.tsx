@@ -26,7 +26,7 @@ export const metadata: Metadata = buildMetadata({
 
 export default function HomePage() {
   return (
-    <RouteRoot>
+    <RouteRoot data-page="home">
       <JsonLd
         data={serviceListSchema(
           home.solutions.cards.map((c) => ({ title: c.title, blurb: c.blurb }))

@@ -30,13 +30,13 @@ export function SolutionsHero() {
 
       <Container className="relative z-[2] flex-1 pt-32 pb-16 md:pt-[140px] md:pb-30">
         <div className="max-w-full lg:max-w-[min(64ch,66%)]">
-          <h1 className="mb-5 text-[clamp(30px,4.6vw,58px)] font-extralight leading-[1.12] tracking-[-0.035em] text-white">
+          <h1 className="mb-5 text-[clamp(38px,5vw,56px)] font-extralight leading-[1.12] tracking-[-0.025em] text-white">
             {hero.title}
           </h1>
           <p className="mb-7.5 max-w-[52ch] text-[clamp(16px,1.9vw,17px)] font-light text-white/80">
             {hero.lede}
           </p>
-          <ButtonLink href="/#contact" variant="brand" arrow>
+          <ButtonLink href="/#contact" variant="brandWash" arrow>
             Discuss your project
           </ButtonLink>
         </div>
@@ -114,7 +114,7 @@ export function IndustriesStrip() {
         <Reveal className="mb-[clamp(40px,5vh,60px)] max-[900px]:mb-6.5 flex flex-wrap items-end justify-between gap-7">
           <div>
             <Kicker onDark>{industries.kicker}</Kicker>
-            <h2 className="text-[clamp(30px,3.4vw,46px)] font-light leading-[1.12] tracking-[-0.03em] text-white">
+            <h2 className="text-[clamp(30px,3.6vw,42px)] font-light leading-[1.12] tracking-[-0.03em] text-white">
               <Lines lines={industries.title} />
             </h2>
           </div>
@@ -133,7 +133,7 @@ export function IndustriesStrip() {
 export function WhySolutions() {
   const { why } = solutions;
   /** Per-column icon tints, from the template's nth-of-type rules. */
-  const tints = ["rgb(120,193,196)", "rgb(226,182,94)", "rgb(232,158,130)", "rgb(150,160,230)"];
+  const tints = ["rgb(94,212,214)", "rgb(245,190,80)", "rgb(245,145,115)", "rgb(150,158,250)"];
   return (
     <section className={cn(BAND, "bg-[#141414]")}>
       <Container>
@@ -182,7 +182,7 @@ export function TechStack() {
           </div>
           <div>
             {tech.paragraphs.map((p, i) => (
-              <p key={i} className={cn("text-[15px] leading-[1.72] text-ink-soft", i > 0 && "mt-3.5")}>
+              <p key={i} className={cn("text-[16.5px] leading-[1.72] text-ink-soft", i > 0 && "mt-3.5")}>
                 {p}
               </p>
             ))}
@@ -231,7 +231,9 @@ export function Recognition() {
           <h2 className="md:text-[42px] text-[28px] font-extralight leading-[1.12] tracking-[-0.03em]">
             {recognition.title}
           </h2>
-          <p className="mt-5 max-w-[32em] text-[16px] text-ink-soft">{recognition.lede}</p>
+          <p className="mt-5 max-w-[32em] text-[16.5px] leading-[1.72] text-ink-soft">
+            {recognition.lede}
+          </p>
 
           <div className="mt-8.5 flex flex-wrap items-center gap-x-8 gap-y-6 border-t border-line-soft pt-7">
             {recognition.badges.map((b) => (
@@ -270,7 +272,7 @@ export function SolutionsCta() {
                 {cta.body}
               </p>
               <div className="mt-7 flex flex-wrap gap-3.5 max-[760px]:flex-col">
-                <ButtonLink href="/#contact" variant="brand" arrow className="max-[760px]:justify-center">
+                <ButtonLink href="/#contact" variant="brandWash" arrow className="max-[760px]:justify-center">
                   Discuss your project
                 </ButtonLink>
                 <ButtonLink href="/work" variant="lineOnDark" arrow className="max-[760px]:justify-center">

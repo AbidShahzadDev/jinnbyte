@@ -11,6 +11,9 @@ import type { ReactNode } from "react";
  * static wrapper gives Next a single in-flow target whose top already sits
  * under the header, so every route opens at its hero.
  */
-export function RouteRoot({ children }: { children: ReactNode }) {
-  return <div>{children}</div>;
+export function RouteRoot({
+  children,
+  ...rest
+}: { children: ReactNode } & { [key: `data-${string}`]: string }) {
+  return <div {...rest}>{children}</div>;
 }

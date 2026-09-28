@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 
 import { BLEED_PADDING, DARK_GRADIENT } from "@/components/ui/dark-band";
 import { Container } from "@/components/ui/section";
@@ -9,7 +9,7 @@ import { cn } from "@/lib/cn";
 import { home } from "@/data/home";
 
 /** Light accents for the numerals in the dark "Why JinnByte" band. */
-const WHY_ACCENTS = ["120,193,196", "150,160,230", "226,182,94", "232,158,130"] as const;
+const WHY_ACCENTS = ["96,208,212", "140,150,242", "246,192,78", "248,150,120"] as const;
 
 function Lines({ lines }: { lines: readonly string[] }) {
   return (
@@ -32,12 +32,12 @@ export function AtAGlance() {
       <Container>
         <div
           className={cn(
-            "relative left-1/2 w-screen -translate-x-1/2 overflow-hidden md:pt-[clamp(124px,15vh,180px)] pt-10",
+            "relative left-1/2 w-screen -translate-x-1/2 overflow-hidden md:pt-[clamp(76px,9vh,110px)] pt-10",
             DARK_GRADIENT,
             BLEED_PADDING
           )}
         >
-          <div className="grid items-center gap-[clamp(52px,5.8vw,92px)] md:pb-[clamp(155px,21vh,230px)] pb-10 lg:grid-cols-[1.08fr_0.92fr]">
+          <div className="grid items-center gap-[clamp(52px,5.8vw,92px)] md:pb-[clamp(72px,9vh,110px)] pb-10 lg:grid-cols-[1.08fr_0.92fr]">
             <Reveal>
               <SectionKicker onDark className="mb-5.5">
                 {glance.kicker}
@@ -49,7 +49,7 @@ export function AtAGlance() {
               <p className="text-[14px] leading-[1.72] font-light text-white/58">{glance.lede}</p>
             </Reveal>
 
-            {/* The template's 2x2 block has no cell rules — only spacing. */}
+            {/* The template's 2x2 block has no cell rules â€” only spacing. */}
             <dl className="grid h-full grid-cols-2 content-between gap-x-[clamp(32px,3.4vw,60px)] gap-y-[34px]">
               {glance.stats.map((s, i) => (
                 <Reveal
@@ -69,7 +69,7 @@ export function AtAGlance() {
           {/* Notched offices panel, a step lighter than the band behind it. */}
           <Reveal
             className={cn(
-              "relative left-1/2 w-screen -translate-x-1/2 bg-[#2A2A2A] md:pt-[clamp(134px,16vh,185px)] pt-10 md:pb-[clamp(100px,12vh,145px)] pb-10",
+              "relative left-1/2 w-screen -translate-x-1/2 bg-[#2A2A2A] md:pt-[clamp(118px,13.5vh,158px)] pt-10 md:pb-[clamp(56px,6.5vh,86px)] pb-10",
               BLEED_PADDING,
               "min-[821px]:[clip-path:polygon(0_46px,26%_46px,calc(26%+92px)_0,100%_0,100%_100%,0_100%)]"
             )}
@@ -116,7 +116,7 @@ export function Clients() {
       <Container className="relative z-[1]">
         <Reveal className="mx-auto mb-[clamp(44px,6vh,80px)] max-w-[66ch] text-center">
           <SectionKicker className="mb-3.5 justify-center">{clients.kicker}</SectionKicker>
-          <h2 className="md:text-[42px] text-[28px] font-extralight leading-[1.16] tracking-[-0.03em]">
+          <h2 className="md:text-[36px] text-[28px] font-extralight leading-[1.16] tracking-[-0.03em]">
             {clients.title}
           </h2>
           <SectionLede className="mt-3.5 text-[15.6px] font-light leading-[1.74] text-ink-soft [@media(max-height:790px)]:text-[14.5px]">
@@ -168,7 +168,7 @@ export function WhyJinnByte() {
       <Container>
         <Reveal className="mb-11 max-w-[760px] md:mb-14">
           <SectionKicker onDark className="mb-4 md:mb-5.5">{why.kicker}</SectionKicker>
-          <h2 className="md:text-[42px] text-[28px] font-extralight tracking-[-0.03em] text-white">
+          <h2 className="md:text-[42px] text-[28px] font-extralight leading-[1.08] tracking-[-0.03em] text-white">
             <Lines lines={why.title} />
           </h2>
         </Reveal>
@@ -178,10 +178,10 @@ export function WhyJinnByte() {
             <Reveal
               key={col.title}
               delay={((i % 4) + 1) as 1 | 2 | 3 | 4}
-              className="border-b border-white/16 py-6.5 sm:border-r sm:px-6.5 lg:border-b-0 lg:pt-8.5 lg:pb-2 max-sm:border-r-0"
+              className="border-b border-white/16 py-6.5 sm:border-r sm:px-6.5 sm:[&:nth-last-child(-n+2)]:border-b-0 lg:border-b-0 lg:pt-8.5 lg:pb-2 !max-sm:border-r-0  max-sm:last:border-b-0"
             >
               <span
-                className="mb-5.5 block font-display text-[32px] font-extralight tracking-[-0.03em] opacity-85"
+                className="mb-5.5 block font-display text-[32px] font-extralight tracking-[-0.03em]"
                 style={{ color: `rgb(${WHY_ACCENTS[i % WHY_ACCENTS.length]})` }}
               >
                 {col.n}
@@ -204,7 +204,7 @@ export function Recognition() {
         <div className="grid items-center gap-10.5 lg:grid-cols-[0.95fr_1.05fr] lg:gap-15">
           <Reveal>
             <SectionKicker className="mb-4 md:mb-5.5">{certs.kicker}</SectionKicker>
-            <h2 className="md:text-[42px] text-[28px] font-extralight tracking-[-0.03em]">
+            <h2 className="md:text-[42px] text-[28px] font-extralight leading-[1.08] tracking-[-0.03em]">
               {certs.title}
             </h2>
             <p className="mt-5 text-[15.5px] font-light text-ink-soft md:text-[17px]">{certs.lede}</p>
@@ -250,7 +250,7 @@ export function ContactSection() {
         <div className="grid items-center gap-11 lg:grid-cols-2 lg:gap-15">
           <Reveal>
             <SectionKicker onDark className="mb-4 md:mb-5.5">{contact.kicker}</SectionKicker>
-            <h2 className="md:text-[42px] text-[28px] font-extralight tracking-[-0.03em] text-white">
+            <h2 className="md:text-[42px] text-[28px] font-extralight leading-[1.08] tracking-[-0.03em] text-white">
               <Lines lines={contact.title} />
             </h2>
             <p className="mt-5 max-w-[50ch] text-[15.5px] font-light text-white/70 md:text-[17px]">
@@ -357,7 +357,7 @@ function ContactForm() {
 
       <button
         type="submit"
-        className="btn-sheen mt-6.5 inline-flex cursor-pointer items-center justify-center gap-[0.6em] rounded-none bg-brand px-[30px] py-[15px] font-display text-[13px] uppercase tracking-[0.11em] text-white transition-[background,transform,box-shadow,translate,scale] duration-300 ease-brand hover:-translate-y-0.5 hover:bg-brand-hover hover:shadow-brand"
+        className="btn-sheen mt-6.5 inline-flex cursor-pointer items-center justify-center gap-[0.6em] rounded-[10px] bg-brand px-[30px] py-[15px] font-display text-[13px] uppercase tracking-[0.11em] text-white transition-[background,transform,box-shadow,translate,scale] duration-300 ease-brand hover:-translate-y-0.5 hover:bg-brand-hover hover:shadow-brand"
       >
         {form.submit || "Send enquiry"}
         <span aria-hidden>&rarr;</span>

@@ -82,7 +82,7 @@ export function ProcessSteps() {
           >
             <span
               ref={fillRef}
-              className="block h-full w-full origin-left bg-[linear-gradient(90deg,#53B2B3_0%,#C39A5A_34%,#CB8878_67%,#8E88C2_100%)] will-change-transform"
+              className="block h-full w-full origin-left bg-[linear-gradient(90deg,#14A6A8_0%,#E0960F_34%,#E55A3B_67%,#7C7CE8_100%)] will-change-transform"
               // Use the same property as the scroll animation; scale-x-0 sets a separate CSS scale.
               style={{ transform: "scaleX(0)" }}
             />

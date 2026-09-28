@@ -1,4 +1,4 @@
-/** Content for the /about route, lifted from the original company-about.html template. */
+﻿/** Content for the /about route, lifted from the original company-about.html template. */
 
 export type InlineIcon = { viewBox: string; markup: string };
 
@@ -84,7 +84,7 @@ export const about: About = {
       },
       {
         "title": "Faster Time to Market",
-        "blurb": "Move from opportunity to production with clearer decisions, fewer handoffs and a delivery path built around what matters first.",
+        "blurb": "Move from opportunity to production with clearer decisions, fewer handoffs and far less guesswork.",
         "icon": {
           "viewBox": "0 0 40 40",
           "markup": "<circle cx=\"13.80\" cy=\"17.00\" r=\"8.00\" stroke-opacity=\"1.0\"></circle><circle cx=\"26.20\" cy=\"17.00\" r=\"8.00\" stroke-opacity=\"1.0\"></circle><circle cx=\"20.00\" cy=\"26.20\" r=\"8.00\" stroke-opacity=\"1.0\"></circle><circle cx=\"20.00\" cy=\"20.20\" r=\"16.00\" stroke-opacity=\"0.25\"></circle>"

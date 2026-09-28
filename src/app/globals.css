@@ -86,6 +86,20 @@
   --font-display: var(--font-outfit), -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif;
 }
 
+/* index.html widens the centred column to 1300px while every other page stays
+   at 1220. `:has()` is used so the header and footer — which render outside the
+   route's own tree — pick the width up too. */
+:root:has([data-page="home"]) {
+  --container-site: 1300px;
+}
+
+/* ...except the solutions grid, which the template holds at 1220 until 1460. */
+@media (max-width: 1460px) {
+  [data-page="home"] #solutions {
+    --container-site: 1220px;
+  }
+}
+
 /* Touch devices can't hover, so hover-revealed content has to start open.
    Mirrors the templates' `@media (hover: none)` blocks. */
 @custom-variant no-hover (@media (hover: none));

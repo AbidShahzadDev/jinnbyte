@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import type { CSSProperties, ReactNode } from "react";
 
 import { ButtonLink } from "@/components/ui/button";
@@ -11,9 +11,9 @@ import { cn } from "@/lib/cn";
 import { about, type InlineIcon } from "@/data/about";
 
 /** The four numbered accents used across the value matrix and the think columns. */
-const ACCENTS = ["#33ADAE", "#3C90C1", "#57A876", "#D5964C"] as const;
+const ACCENTS = ["#08A5A7", "#1585D6", "#14A45C", "#F59E0B"] as const;
 
-/** `.band` — the light sections' vertical rhythm. */
+/** `.band` â€” the light sections' vertical rhythm. */
 const BAND = "py-[clamp(80px,12vh,144px)]";
 
 export function Lines({ lines }: { lines: readonly string[] }) {
@@ -28,7 +28,7 @@ export function Lines({ lines }: { lines: readonly string[] }) {
   );
 }
 
-/** `.abrule` — the short accent rule under a dark-band heading. */
+/** `.abrule` â€” the short accent rule under a dark-band heading. */
 function AbRule({ onDark = true }: { onDark?: boolean }) {
   return (
     <hr className={cn("mt-6.5 h-px w-16 border-0", onDark ? "bg-brand-on-dark" : "bg-brand")} />
@@ -36,7 +36,7 @@ function AbRule({ onDark = true }: { onDark?: boolean }) {
 }
 
 /**
- * `.darkband` — full-bleed charcoal panel with the angled top-left notch.
+ * `.darkband` â€” full-bleed charcoal panel with the angled top-left notch.
  * Its generous padding is what gives these sections their height.
  */
 function DarkBandPanel({ children }: { children: ReactNode }) {
@@ -55,7 +55,7 @@ function DarkBandPanel({ children }: { children: ReactNode }) {
   );
 }
 
-/** `.absplit` — the shared 0.9fr / 1.1fr header used by most sections. */
+/** `.absplit` â€” the shared 0.9fr / 1.1fr header used by most sections. */
 function AbSplit({
   children,
   className,
@@ -100,9 +100,13 @@ function StrokeIcon({ icon, size }: { icon: InlineIcon; size: number }) {
 export function AboutHero() {
   const { hero } = about;
   return (
-    // Unlike the home and work heroes, the About template never runs the header
-    // in "over-hero" mode — the hero starts below it, so no data-hero here.
-    <section id="ab2-hero" className="relative overflow-hidden bg-night">
+    // The hero now fills the first screen and runs under a transparent header,
+    // the way the home and work heroes do.
+    <section
+      id="ab2-hero"
+      data-hero
+      className="relative -mt-19 min-h-svh overflow-hidden bg-night"
+    >
       {hero.image ? (
         <Image
           src={hero.image}
@@ -116,23 +120,23 @@ export function AboutHero() {
       ) : null}
       <div className="absolute inset-0 bg-[linear-gradient(100deg,rgba(3,8,18,.92)_0%,rgba(3,8,18,.78)_44%,rgba(3,8,18,.36)_63%,rgba(3,8,18,.03)_100%),linear-gradient(0deg,rgba(3,8,18,.55)_0%,rgba(3,8,18,0)_46%)]" />
 
-      <Container className="relative z-[2] w-full pt-[120px] pb-[96px]">
-        <Reveal className="max-w-full lg:max-w-[min(600px,58%)]">
+      <Container className="relative z-[2] flex min-h-svh w-full flex-col pt-[120px] pb-[72px]">
+        <Reveal className="flex max-w-full flex-auto flex-col justify-center lg:max-w-[min(700px,62%)]">
           <SectionKicker onDark className="mb-4">{hero.kicker}</SectionKicker>
-          <h1 className="mb-6 text-[clamp(36px,4.6vw,52px)] font-extralight leading-[1.06] tracking-[-0.035em] text-white">
+          <h1 className="mb-6 text-[clamp(34px,4.4vw,56px)] font-extralight leading-[1.06] tracking-[-0.035em] text-white">
             <Lines lines={hero.title} />
           </h1>
           <p className="max-w-[60ch] text-[clamp(16px,1.9vw,17px)] font-light leading-[1.72] text-white/78">
             {hero.lede}
           </p>
           <div className="mt-8.5">
-            <ButtonLink href="/#contact" variant="brand" arrow>
+              <ButtonLink href="/#contact" variant="brandWash" arrow>
               Let&rsquo;s talk
             </ButtonLink>
           </div>
         </Reveal>
 
-        <dl className="mt-14 grid grid-cols-2 gap-x-10 gap-y-8 border-t border-white/18 pt-8 lg:grid-cols-4">
+        <dl className="mt-14 grid flex-none grid-cols-2 gap-x-10 gap-y-8 border-t border-white/18 pt-8 lg:grid-cols-4">
           {hero.stats.map((stat, i) => (
             <Reveal key={stat.label} delay={((i % 4) + 1) as 1 | 2 | 3 | 4}>
               <dd className="font-display text-[clamp(32px,3.2vw,46px)] font-extralight leading-none tracking-[-0.04em] text-white">
@@ -154,7 +158,7 @@ export function AboutHero() {
 }
 
 /**
- * "Where we create value" — a hairline matrix whose cells turn dark on hover,
+ * "Where we create value" â€” a hairline matrix whose cells turn dark on hover,
  * each numbered and tinted with its own accent.
  */
 export function WhereWeCreateValue() {
@@ -170,7 +174,7 @@ export function WhereWeCreateValue() {
                 {value.title}
               </h2>
             </div>
-            <p className="max-w-[56ch] text-[16px] font-light leading-[1.8] text-ink-soft">
+            <p className="max-w-[56ch] text-[17px] font-light leading-[1.72] text-ink-soft">
               {value.lede}
             </p>
           </AbSplit>
@@ -206,7 +210,7 @@ export function WhereWeCreateValue() {
                 </p>
                 <span
                   aria-hidden
-                  className="pointer-events-none absolute right-5 bottom-4 leading-none text-[var(--acc)] opacity-34 transition-[opacity,transform,translate,scale] duration-550 ease-brand group-hover:-translate-y-[3px] group-hover:opacity-50"
+                  className="pointer-events-none absolute right-5 bottom-4 leading-none text-[var(--acc)] opacity-55 transition-[opacity,transform,translate,scale] duration-550 ease-brand group-hover:-translate-y-[3px] group-hover:opacity-72 [&_svg]:stroke-[1.2]"
                 >
                   <StrokeIcon icon={cell.icon} size={66} />
                 </span>
@@ -219,7 +223,7 @@ export function WhereWeCreateValue() {
   );
 }
 
-/** "How we think" — ruled columns on the dark band. */
+/** "How we think" â€” ruled columns on the dark band. */
 export function HowWeThink() {
   const { think } = about;
   return (
@@ -235,7 +239,7 @@ export function HowWeThink() {
                 </h2>
                 <AbRule />
               </div>
-              <p className="max-w-[56ch] text-[16px] font-light leading-[1.8] text-white/82">
+              <p className="max-w-[56ch] text-[17px] font-light leading-[1.72] text-white/82">
                 {think.lede}
               </p>
             </AbSplit>
@@ -301,7 +305,7 @@ export function WhatWeBelieve() {
   );
 }
 
-/** "Our story" — the narrative plus the office ledger that closes it. */
+/** "Our story" â€” the narrative plus the office ledger that closes it. */
 export function OurStory() {
   const { story } = about;
   return (
@@ -380,7 +384,7 @@ export function OurTeam() {
                 {team.title}
               </h2>
             </div>
-            <p className="max-w-[56ch] text-[16px] font-light leading-[1.8] text-ink-soft">{team.lede}</p>
+            <p className="max-w-[56ch] text-[17px] font-light leading-[1.72] text-ink-soft">{team.lede}</p>
           </AbSplit>
         </Reveal>
 
@@ -454,7 +458,7 @@ export function OurCulture() {
                   </p>
                 ))}
                 <div className="mt-7.5">
-                  <ButtonLink href="/careers" variant="brand" arrow>
+                    <ButtonLink href="/careers" variant="brandWash" arrow>
                     Explore Careers
                   </ButtonLink>
                 </div>
@@ -542,7 +546,7 @@ export function AboutCta() {
             {cta.body}
           </p>
           <div className="flex justify-center">
-            <ButtonLink href="/#contact" variant="brand" arrow>
+              <ButtonLink href="/#contact" variant="brandWash" arrow>
               Start a conversation
             </ButtonLink>
           </div>

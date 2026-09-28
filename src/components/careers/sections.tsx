@@ -115,7 +115,7 @@ export function CareersHero() {
                   {hero.lede}
                 </p>
                 <div className="mt-8.5 flex flex-wrap gap-3.5 max-[481px]:w-full max-[481px]:[&>a]:flex-auto max-[481px]:[&>a]:justify-center">
-                  <ButtonLink href={`mailto:${hero.ctaEmail}`} variant="brand" arrow>
+                  <ButtonLink href={`mailto:${hero.ctaEmail}`} variant="brandWash" arrow>
                     Join now
                   </ButtonLink>
                   <ButtonLink href="/about" variant="lineOnDark" arrow>
@@ -345,7 +345,7 @@ export function OpenApplications() {
                   {apply.lede}
                 </p>
                 <div className="mt-8 flex flex-wrap items-center gap-3.5 max-[481px]:w-full max-[481px]:[&>a:first-child]:flex-auto max-[481px]:[&>a:first-child]:justify-center">
-                  <ButtonLink href={`mailto:${apply.email}`} variant="brand" arrow>
+                  <ButtonLink href={`mailto:${apply.email}`} variant="brandWash" arrow>
                     Join now
                   </ButtonLink>
                   <a
