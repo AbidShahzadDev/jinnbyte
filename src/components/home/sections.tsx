@@ -342,7 +342,13 @@ function ContactForm() {
                   name={field.name}
                   required={field.required}
                   defaultValue=""
-                  className={cn(controlClass, "cursor-pointer appearance-none bg-[url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2378C1C4' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E\")] bg-size-[16px_16px] bg-position-[right_16px_center] bg-no-repeat pr-11 invalid:text-white/30")}
+                  className={cn(controlClass, "cursor-pointer appearance-none pr-11 invalid:text-white/30")}
+                  style={{
+                    backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2378C1C4' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E\")",
+                    backgroundSize: "16px 16px",
+                    backgroundPosition: "right 16px center",
+                    backgroundRepeat: "no-repeat",
+                  }}
                 >
                   {field.options.map((opt, i) => (
                     <option key={opt} value={i === 0 ? "" : opt} className="bg-[#16262f] text-white">
