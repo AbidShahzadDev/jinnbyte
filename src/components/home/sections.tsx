@@ -240,14 +240,17 @@ export function Recognition() {
 export function ContactSection() {
   const { contact } = home;
   return (
-    <section id="contact" className="relative scroll-mt-24 overflow-hidden bg-[#040d10] py-16 md:py-26">
+    <section
+      id="contact"
+      className="relative scroll-mt-24 overflow-hidden bg-[#0a171c] py-[clamp(44px,6vh,72px)]"
+    >
       {contact.image ? (
         <Image src={contact.image} alt="" fill sizes="100vw" className="object-cover object-center" />
       ) : null}
-      <div className="absolute inset-0 bg-[#040d10]/78" />
+      <div className="absolute inset-0 bg-[linear-gradient(100deg,rgba(10,23,28,0.94)_0%,rgba(10,23,28,0.86)_38%,rgba(10,23,28,0.68)_72%,rgba(10,23,28,0.5)_100%)]" />
 
       <Container className="relative z-[1]">
-        <div className="grid items-center gap-11 lg:grid-cols-2 lg:gap-15">
+        <div className="grid items-start gap-9 min-[941px]:grid-cols-2 min-[941px]:gap-15">
           <Reveal>
             <SectionKicker onDark className="mb-4 md:mb-5.5">{contact.kicker}</SectionKicker>
             <h2 className="md:text-[42px] text-[28px] font-extralight leading-[1.08] tracking-[-0.03em] text-white">
@@ -262,7 +265,12 @@ export function ContactSection() {
                 <li key={step.title} className="relative border-t border-white/16 py-5.5 pl-14.5">
                   <span
                     aria-hidden
-                    className="absolute top-5.5 left-0 font-display text-[15px] font-light text-brand-on-dark"
+                    className={cn(
+                      "absolute top-5.5 left-0 font-display text-[15px] font-light",
+                      i === 0 && "text-[#60D0D4]",
+                      i === 1 && "text-[#8C96F2]",
+                      i === 2 && "text-[#F6C04E]"
+                    )}
                   >
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -287,34 +295,36 @@ export function ContactSection() {
 function ContactForm() {
   const { form } = home.contact;
 
-  // Borderless fields with a hairline that draws across on focus, as in the template.
   const controlClass =
-    "w-full rounded-none border-0 border-b border-[#d9d9d9] bg-white px-0 py-2.25 font-sans text-[14.5px] font-light text-[#1a1a1a] transition-colors duration-300 outline-none placeholder:text-ink-faint";
+    "w-full rounded-[10px] border border-white/12 bg-white/4 px-4 py-3 font-sans text-[15px] font-light text-white outline-none transition-[border-color,background-color,box-shadow] duration-300 placeholder:text-white/30 hover:border-white/22 focus:border-brand-on-dark/80 focus:bg-white/6 focus:shadow-[0_0_0_4px_rgba(83,178,179,0.16)]";
 
   return (
     <form
-      // Posts to the existing enquiry endpoint, exactly as the template did.
       action="https://jinnbyte.com/contact/"
       method="get"
-      className="rounded-[10px] bg-white px-6.5 py-8 shadow-[0_30px_70px_rgb(0_0_0/0.34)] md:px-9.5 md:py-10"
+      className="relative isolate overflow-hidden rounded-[14px] border border-white/10 bg-[rgba(15,30,39,0.72)] px-5.5 py-8 shadow-[0_40px_90px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur-[22px] min-[621px]:px-8 min-[941px]:px-9.5 min-[941px]:py-8.5 before:absolute before:inset-x-0 before:top-0 before:z-0 before:h-0.75 before:bg-brand before:content-[''] after:absolute after:-top-35 after:-right-30 after:z-0 after:size-85 after:rounded-full after:bg-[radial-gradient(circle,rgba(83,178,179,0.18)_0%,rgba(83,178,179,0)_70%)] after:content-[''] *:relative *:z-1"
     >
-      <h3 className="font-display text-[21px] font-normal tracking-[-0.015em]">{form.title}</h3>
-      <p className="mt-2.5 text-[14px] leading-[1.65] text-ink-soft">{form.lede}</p>
+      <h3 className="font-display text-[clamp(22px,1.9vw,27px)] font-light tracking-[-0.02em] text-white">
+        {form.title}
+      </h3>
+      <p className="mt-2 max-w-[52ch] text-[14.5px] leading-[1.65] text-white/58 min-[941px]:mb-6.5">
+        {form.lede}
+      </p>
 
-      <div className="mt-6 grid gap-4.5 sm:grid-cols-2">
+      <div className="mt-6 grid gap-x-4.5 gap-y-5 min-[621px]:grid-cols-2 min-[941px]:gap-y-4.5">
         {form.fields.map((field) => {
           const full = field.type === "textarea" || field.options.length > 0;
           return (
             <div
               key={field.name}
-              className={cn("field group flex flex-col gap-1.75", full && "sm:col-span-2")}
+              className={cn("field group flex flex-col gap-1.75", full && "min-[621px]:col-span-2")}
             >
               <label
                 htmlFor={`cf-${field.name}`}
-                className="text-[12px] uppercase tracking-[0.06em] text-[#7a7a7a] transition-colors duration-300 group-focus-within:text-brand-deep"
+                className="text-[11.5px] font-medium uppercase tracking-[0.14em] text-white/50 transition-colors duration-300 group-focus-within:text-brand-on-dark"
               >
                 {field.label}
-                {field.required ? <i className="ml-[3px] text-brand-deep not-italic">*</i> : null}
+                {field.required ? <i className="ml-0.75 text-brand-on-dark not-italic">*</i> : null}
               </label>
 
               {field.type === "textarea" ? (
@@ -324,7 +334,7 @@ function ContactForm() {
                   rows={3}
                   placeholder={field.placeholder}
                   required={field.required}
-                  className={cn(controlClass, "min-h-[78px] resize-y")}
+                  className={cn(controlClass, "min-h-28 resize-y leading-[1.6] min-[941px]:min-h-24")}
                 />
               ) : field.options.length > 0 ? (
                 <select
@@ -332,10 +342,10 @@ function ContactForm() {
                   name={field.name}
                   required={field.required}
                   defaultValue=""
-                  className={controlClass}
+                  className={cn(controlClass, "cursor-pointer appearance-none bg-[url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2378C1C4' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E\")] bg-size-[16px_16px] bg-position-[right_16px_center] bg-no-repeat pr-11 invalid:text-white/30")}
                 >
                   {field.options.map((opt, i) => (
-                    <option key={opt} value={i === 0 ? "" : opt}>
+                    <option key={opt} value={i === 0 ? "" : opt} className="bg-[#16262f] text-white">
                       {opt}
                     </option>
                   ))}
@@ -357,7 +367,7 @@ function ContactForm() {
 
       <button
         type="submit"
-        className="btn-sheen mt-6.5 inline-flex cursor-pointer items-center justify-center gap-[0.6em] rounded-[10px] bg-brand px-[30px] py-[15px] font-display text-[13px] uppercase tracking-[0.11em] text-white transition-[background,transform,box-shadow,translate,scale] duration-300 ease-brand hover:-translate-y-0.5 hover:bg-brand-hover hover:shadow-brand"
+        className="btn-sheen mt-7.5 inline-flex w-full cursor-pointer items-center justify-center gap-[0.6em] rounded-md bg-brand px-7 py-4.25 font-display text-[13px] uppercase tracking-[0.11em] text-white transition-[background,transform,box-shadow,translate,scale] duration-300 ease-brand hover:-translate-y-0.5 hover:bg-brand-hover hover:shadow-brand min-[941px]:mt-6.5"
       >
         {form.submit || "Send enquiry"}
         <span aria-hidden>&rarr;</span>

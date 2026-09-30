@@ -29,8 +29,6 @@ function careersSchema() {
     name: `Careers at ${site.name}`,
     description: careers.hero.lede,
     about: { "@id": `${SITE_URL}/#organization` },
-    // The template lists no specific vacancies, so the page advertises open
-    // applications rather than claiming JobPosting entries that don't exist.
     potentialAction: {
       "@type": "ApplyAction",
       target: `mailto:${careers.apply.email}`,
@@ -46,8 +44,6 @@ export default function CareersPage() {
       <JsonLd data={breadcrumbSchema([{ name: "Careers", path: "/careers" }])} />
 
       <CareersHero />
-
-      {/* `.pgbody` — positioned above the sticky hero so the bands slide over it. */}
       <div className="relative z-[2] bg-paper">
         <WhatToExpect />
         <CareersCulture />

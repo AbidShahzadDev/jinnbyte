@@ -1855,6 +1855,101 @@
 /* Numbers hidden; layout unchanged */
 #solutions .solc::after{visibility:hidden;}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+<style id="jb-footer-icons">
+/* Footer: icons beside socials, email and phone; flags beside office addresses */
+.fgrid a.fl{display:flex;align-items:center;gap:12px;}
+.fgrid a.fl i,.fgrid a.fl .fic{flex:none;width:16px;text-align:center;color:var(--ink-faint);transition:color .25s var(--ease);}
+.fgrid a.fl i{font-size:15px;line-height:1;}
+.fgrid a.fl .fic{height:16px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;}
+.fgrid a.fl:hover i,.fgrid a.fl:hover .fic{color:var(--brand-deep);}
+.fgrid .addr b{display:flex;align-items:center;gap:10px;}
+.fgrid .addr .fflag{width:20px;height:auto;flex:none;border-radius:2px;}
+/* street line sits under the city name, clear of the flag */
+.fgrid .addr .adl{display:block;padding-left:30px;}
+.fgrid a.fl .fic{color:var(--brand);}
+.fgrid a.fl:hover .fic{color:var(--brand-deep);}
+/* email + phone icons in brand teal */
+.fgrid a.fl .fic{color:var(--brand);stroke-width:1.6;}
+.fgrid a.fl:hover .fic{color:var(--brand-deep);}
+/* social icons in each platform's own colours */
+.fgrid a.fl .fa-facebook-f{color:#1877F2;}
+.fgrid a.fl .fa-x-twitter{color:#000;}
+.fgrid a.fl .fa-linkedin-in{color:#0A66C2;}
+.fgrid a.fl .fa-instagram{font-size:24px;width:24px;color:#E4405F;background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+.fgrid a.fl:hover i{filter:brightness(.9);}
+.fgrid a.fl:hover .fa-facebook-f{color:#1877F2;}.fgrid a.fl:hover .fa-x-twitter{color:#000;}.fgrid a.fl:hover .fa-linkedin-in{color:#0A66C2;}
+</style>
+<style id="jb-contact-form">
+/* Contact steps: numbers follow the page accent palette */
+#contact .stp li:nth-child(1)::before{color:rgb(96,208,212);}
+#contact .stp li:nth-child(2)::before{color:rgb(140,150,242);}
+#contact .stp li:nth-child(3)::before{color:rgb(246,192,78);}
+
+/* Contact form: dark glass panel in the site's navy, accent strip on top */
+#contact .cform{position:relative;overflow:hidden;background:rgba(15,30,39,.72);
+  -webkit-backdrop-filter:blur(22px) saturate(140%);backdrop-filter:blur(22px) saturate(140%);
+  border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:40px 40px 38px;
+  box-shadow:0 40px 90px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.06);}
+#contact .cform::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;
+  background:var(--brand);}
+#contact .cform::after{content:"";position:absolute;right:-120px;top:-140px;width:340px;height:340px;border-radius:50%;
+  background:radial-gradient(circle,rgba(83,178,179,.18) 0%,rgba(83,178,179,0) 70%);pointer-events:none;}
+#contact .cform > *{position:relative;z-index:1;}
+#contact .cform h3{color:#fff;font-size:clamp(22px,1.9vw,27px);font-weight:300;letter-spacing:-.02em;margin-bottom:8px;}
+#contact .cform .sub{color:rgba(255,255,255,.58);font-size:14.5px;line-height:1.65;margin-bottom:30px;max-width:52ch;}
+#contact .cgrid{gap:20px 18px;}
+
+/* fields: soft filled boxes, same 10px radius as the buttons */
+#contact .fld{gap:9px;}
+#contact .fld::after{display:none;}
+#contact .fld > label,#contact .fld legend{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:rgba(255,255,255,.5);}
+#contact .fld > label i,#contact .fld legend i{color:var(--brand-on-dark);font-style:normal;margin-left:3px;}
+#contact .fld:focus-within > label,#contact .fld:focus-within legend{color:var(--brand-on-dark);}
+#contact .cform .fld input,#contact .cform .fld textarea{background:rgba(255,255,255,.04);color:#fff;font-size:15px;
+  border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:13px 16px;
+  transition:border-color .3s var(--ease),background .3s var(--ease),box-shadow .3s var(--ease);}
+#contact .cform .fld textarea{min-height:112px;line-height:1.6;}
+#contact .cform .fld input::placeholder,#contact .cform .fld textarea::placeholder{color:rgba(255,255,255,.3);}
+#contact .cform .fld input:hover,#contact .cform .fld textarea:hover{border-color:rgba(255,255,255,.22);}
+#contact .cform .fld input:focus,#contact .cform .fld textarea:focus{outline:none;background:rgba(255,255,255,.06);
+  border-color:rgba(120,193,196,.8);box-shadow:0 0 0 4px rgba(83,178,179,.16);}
+#contact .cform .fld input:-webkit-autofill{-webkit-text-fill-color:#fff;-webkit-box-shadow:0 0 0 40px #16262f inset;caret-color:#fff;}
+
+/* interest: dropdown styled to match the other fields */
+#contact .cform .fld select{background-color:rgba(255,255,255,.04);color:#fff;font-size:15px;
+  border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:13px 44px 13px 16px;cursor:pointer;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2378C1C4' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 16px center;background-size:16px 16px;
+  transition:border-color .3s var(--ease),background-color .3s var(--ease),box-shadow .3s var(--ease);}
+#contact .cform .fld select:invalid{color:rgba(255,255,255,.3);}
+#contact .cform .fld select:hover{border-color:rgba(255,255,255,.22);}
+#contact .cform .fld select:focus{outline:none;background-color:rgba(255,255,255,.06);
+  border-color:rgba(120,193,196,.8);box-shadow:0 0 0 4px rgba(83,178,179,.16);}
+#contact .cform .fld select option{background:#16262f;color:#fff;}
+
+/* submit: full width, solid teal */
+#contact .cform .btn{width:100%;justify-content:center;margin-top:30px;padding:17px 28px;}
+#contact .cform .btn-brand:hover{background:var(--brand-hover);color:#fff;box-shadow:0 14px 34px rgba(83,178,179,.3);}
+
+@media(max-width:620px){#contact .cform{padding:32px 22px 28px;}}
+
+/* Equal heights: left column stretches to the form, steps share the extra space */
+@media(min-width:941px){
+  #contact .wrap.close{align-items:stretch;}
+  #contact .close > .rv:first-child{display:flex;flex-direction:column;}
+  #contact .close > .rv:first-child .stp{flex:1;display:flex;flex-direction:column;margin-top:clamp(28px,4vh,40px);}
+  #contact .close > .rv:first-child .stp li{flex:1;display:flex;flex-direction:column;justify-content:center;}
+  #contact .close > .rv:first-child .stp li::before{top:50%;transform:translateY(-50%);margin-top:-.7em;}
+  /* form a touch tighter so the two columns meet in the middle */
+  #contact .cform{padding:36px 38px 34px;}
+  #contact .cform .sub{margin-bottom:26px;}
+  #contact .cgrid{gap:18px 18px;}
+  #contact .cform .fld textarea{min-height:96px;}
+  #contact .cform .btn{margin-top:26px;}
+}
+</style>
 </head>
 
 <body>
@@ -2291,25 +2386,25 @@
       </div>
       <div>
         <h4>Follow Us<span class="us">_</span></h4>
-        <a href="https://web.facebook.com/JinnByte">Facebook</a>
-        <a href="https://www.instagram.com/jinnbyte.official/">Instagram</a>
-        <a href="https://twitter.com/JinnByte">Twitter</a>
-        <a href="https://www.linkedin.com/company/jinnbyte/">Linkedin</a>
+        <a class="fl" href="https://web.facebook.com/JinnByte"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i>Facebook</a>
+        <a class="fl" href="https://www.instagram.com/jinnbyte.official/"><i class="fa-brands fa-instagram" aria-hidden="true"></i>Instagram</a>
+        <a class="fl" href="https://twitter.com/JinnByte"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i>Twitter</a>
+        <a class="fl" href="https://www.linkedin.com/company/jinnbyte/"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>Linkedin</a>
       </div>
       <div>
         <h4>Email<span class="us">_</span></h4>
-        <a href="mailto:info@jinnbyte.com">info@jinnbyte.com</a>
-        <a href="mailto:hr@jinnbyte.com">hr@jinnbyte.com</a>
+        <a class="fl" href="mailto:info@jinnbyte.com"><svg class="fic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>info@jinnbyte.com</a>
+        <a class="fl" href="mailto:hr@jinnbyte.com"><svg class="fic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>hr@jinnbyte.com</a>
         <h4 style="margin-top:32px;">Phone<span class="us">_</span></h4>
-        <a href="tel:+15594959371">+1 (559) 495-9371</a>
-        <a href="tel:+16478967574">+1 (647) 896-7574</a>
-        <a href="tel:+924237309873">+92 423 7309873</a>
+        <a class="fl" href="tel:+15594959371"><svg class="fic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h2.6l1.4 4.2-2 1.3a11.5 11.5 0 0 0 6.4 6.4l1.3-2 4.2 1.4v2.6a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></svg>+1 (559) 495-9371</a>
+        <a class="fl" href="tel:+16478967574"><svg class="fic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h2.6l1.4 4.2-2 1.3a11.5 11.5 0 0 0 6.4 6.4l1.3-2 4.2 1.4v2.6a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></svg>+1 (647) 896-7574</a>
+        <a class="fl" href="tel:+924237309873"><svg class="fic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h2.6l1.4 4.2-2 1.3a11.5 11.5 0 0 0 6.4 6.4l1.3-2 4.2 1.4v2.6a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></svg>+92 423 7309873</a>
       </div>
       <div>
         <h4>Address<span class="us">_</span></h4>
-        <div class="addr"><b>Fresno, USA</b>839 N Cedar Ave B-4, #5027</div>
-        <div class="addr"><b>Etobicoke, Canada</b>235 Dixon Rd, Unit 106</div>
-        <div class="addr"><b>Lahore, Pakistan</b>227-CCA FF Block, DHA Phase IV</div>
+        <div class="addr"><b><img class="fflag" alt="" src="data:image/webp;base64,UklGRuwDAABXRUJQVlA4WAoAAAAQAAAAPwAAKwAAQUxQSHQAAAABcFtr25p8SYfbClkLXcEp2cldKneXyipYgHx8eQf4as6JiAkwyZVbfKHyuyx6ySRrBMVTi/xbsGgRxjZQAkMxo3RzRJM4N4byH/7+szb7JKJJ5JSGrclG3j0Ei6NUGEMXRcpQXIuQQZTqvD5vhZ97O0pkAFZQOCBSAwAA8BMAnQEqQAAsAD4pEodDIaEQUrwEzBgChLYAX/TgXuf1D8L+GD7Z8U0aroC+gfcBkXv2M/s3sA/Sj14tMA/Svpt/aF8ly5H/ih1i/j31NydH2/wJfxV7QDyH/zXHX/5XSKP9VrDH9e8z3+k8wfzX/vfyV+g39Tv9H+an9xBLKx2ldSOLmBhDMtpsmaEkrjjas/m6ERwevkrBQiSfPOY5JwsExyTc6lU4AP76/w8CKkoOMcsubsw/K2I9YPMsleWHPylWe56493GDyUD+/tIZfWfylRBpfW3tSEVtcjVesZKSDRvLdfwTn+kta+/59junn3Lzs3V+SBj7lUVhkOsaEkoixVxEe/wI0jX/wEf1ryt6wQyvTxyIMvB0rSUNHSneDw6rYWqcRuCt2FPDp3fB+NEyr4jOeCf//N6YFjotQZanPLnOBZ9r/03a4V6RVdcgzg72mceX+NZhV7Q3xRVqXdx6/opmNMvKbPI0wZlkyqRfvocaA8T6s9UV6WHyTvsrhch02Vf5eA2xzG6X5D+K4MEOP0yOPBxUwfPf42yMtXceqjKJu3+UTSkOiY0aP2iyVxfZ25SENitpvo8zBUVpQX+dxY927DnQXVgeQu4Qs/1ec79sPuDvAAtkgBctito/Ht/EEuAZAUHDsqMpNx7rpytlrVJEoRJn4SxcRav43gIPJA03duwUNHYP1b9Fo+6ON//kAkgECtYd+JVX9hiYTRMdCtHT95NHzHXK97m0TpZIpzTgT1skit8H1YN7IM4rg33oj1//asoLuTAnb56P/B/dK8j9t46T/7lD16vnL1yFdG+GSCmj26kA4f+0QrS3/dD2i6A60VxpmfJkXJRs+TIuSjLPyWLORd4Btwo25jESB2HUE4W1/SFM7Pwi14Msi+brYm5iewtvK+zKxJOGtJcAOW3ANEt+ymNgGsXeaDg63QaYFM6r2qRfFePeyVOU0U/m+DMlj7sRmPf9d62389qMtc//lQTzrn6CgDlTj8Rw//89o5DROXhZdJdxBD7WRjBHhXSVMUU+RsCkKeRrtWC67zS9H9JBo8IofQn+kg0eEUPoR1u+2eQdEf81hfH57aNIJkxihY/UTtk5eOmo4oBTRPd862rErH1YwdKEWnOQAA==">Fresno, USA</b><span class="adl">839 N Cedar Ave B-4, #5027</span></div>
+        <div class="addr"><b><img class="fflag" alt="" src="data:image/webp;base64,UklGRiYDAABXRUJQVlA4WAoAAAAQAAAAPAAAKwAAQUxQSG0AAAABcFzbtprcJMDca0hHWBVQhRdjcxYVuGsfX96d545ZKyImIEVr/Awsvr3mTaTIb1S952i+6U3CPF+NGR1VPUc/Mxmzb6Ry4N9zJ+Wu0WRivA7oZByHlQ1D1AzcVlBdU3VdRQK0F/tD8XeLPpAAAFZQOCCSAgAAsA8AnQEqPQAsAD4pEIdCIaEJXgNmDAFCWwAuGNHRd+bfir+GfRP7Dd1fxQzEnkL/I/jNjs/MB+u3pRfoB1MHXKegB+onWb/tV6NDvwfSBos3m3/0ewZf7ngIDbe7kwkLxR8bYiYfzvi1ZZH5bJV63P2KdGSsBW04KxnRwsmFVw53u2y/nOAA/v73WE7B+R/4Ub3IJ/5aWmYEv0LFC//e6mfJkM3jj4FDpf/+yllmcu21qP7psf7U7CPnvrxjfxvcWpyM4a5ehlVs/f8v43yIyvi9+qnXXUreHrwEe5f/8Nf+ug5b6NDf+LE6gRsjKNMcyj+npWDnj65+a45UaPzhMFqCXTdfHzP/zFg2MxE137WBKO+Pnf6/Qf2H4LRH5bQd/61045VXQsAsQBWXgA3KGP70V+7lyZ8RWQPjPxG0d6LK+a5DOsSAlJ7ZUMmlACmnVoDAkwiCWuXE7VcNLomDnACJ8SFUziH44rGYnviM6+JecFrpgJY7SCD0NYfPXKjLUAvR8Cn+m2gOLP5ET+5+LhzwQpoSs0Xz0uz5ZQcLYYnw12/KsfsiYG//kPeo23x3L2+Jz2I8XXAlY5e9waTDEwpp/W/Mg1dxXgKxqj5yf/z3/+GUf+MXT2H3hbPaFa79+B+AVWFsd9+drwZs8HvDFp9Mc9sYJV/6PWZ/PB17zEc/obbx46FN9Vo6s49ame5AjbBivrT2yDfB4P5w4f/En3Whwdv5RfOrxxi99qZAxKnx3/4mPXuP94A0xaw9FBBOCP4GSRtWYSs3sRAAWEh8Bv8gw+Zka6YLpYsxJA3cdV4GlJycFbPu0/dpc88KBdtjpdAKnE7b5VQtrNIdtuPFoejMyeDVyXMHd1EycM0qoAAAAA==">Etobicoke, Canada</b><span class="adl">235 Dixon Rd, Unit 106</span></div>
+        <div class="addr"><b><img class="fflag" alt="" src="data:image/webp;base64,UklGRvADAABXRUJQVlA4WAoAAAAQAAAAQAAAKwAAQUxQSHkAAAABcNva2pt8Jmc2QKzgMYi7pB663HkWMh2ixBPACK7j9/1vgFcjRcQEFKS6/MTgjC5T8UR6LzAHxUI3RG40ptjLGhmInar/M2OC4piDW90Z5Ibn3zsjU3f6OuPCboWMyWnut0PkRmOKjUj/DeagWChIbRYmJNFlIJ4AAFZQOCBQAwAAUBYAnQEqQQAsAD4pEIZCIaELvScADAFCUAQaYjz2zkpdyvU+OfFL/QPYBtmPMB/AP7Z/dP7N7xv4Aazd6AHlkfsB8J/7VfszNKfxwycz2j8kPMA3SH9exnr8gNRy/JnmYYrf8l6TX9d5gPo7/d+4J/IP5v/lfzc41D9XUqW6Ul/YB7zYQ4S18m2eUn4rygWAPjsM6RTMCz64kPpfHx7j6llDCHjOXAntQhLwCbBHxavTU53a8Bk8a/4ouAD+//6Bwkwg++sXW3GuT9OPd066oXknxCe5f087zd/+dzhakvdlLAXPclz8TrfqKVlQhfIi472f9ZsqSpkIcwRb//5FdYzv/+L92vgyQT9psDU1naBKf71/HP+8abD72qKdRFLyn/bZE2fumF6hej1nV9Aj/OCcSYSa+hyI/qSwJula5/f/od7yiBFXZ/3ODMkOa5c/0eHmOo0xOsF6nhftlEckHkcH1YQP+58P+INekgzpbC/96W/op4a6vnl8OV4/WFoCBE8CRonPDfxvmVAPDcgcVWn84doiyVAA2KGQD/RR8jP6GzhtISAfCE9xtet4OR29iKuIgAHUaxkLrb0UFxn/yGAkE3jIJc+sS2cRMMXb8nvt/HXBn1YoVYndiC51nU+iHS1ACHpi7AGc+XP9JYIAMB/z/wxlfYVheN9e+Qn7zBgRYGM5Sn2vvut/1kWvR++SrQtRx0Pda8GcaeF3mP2aAmou5wS81Ksy+xoy+crzd9cSwnJEYFuNQffdzA/sOLzcdapuIG0NwZDnGhZdTXN5W+/f5Rqjv+Mm/PbLFjiKAHWPeC4FFtK8Wkesss6U9leBhZI3Nn8nJwbbAk2LD3ubxj85Bd2vvs1lAAPWEH9wdEuYQThQ1vQLlfjKn1zo/H7+gJf5rPjzb5HQKA0FoAWfty96jClLnmQeIlvzlh+KdecV1c8fMpdTzMvoHfvWKPrAijcETAyIgGG5hMIuFBFXGGN+N/DkSK9T3cRIHpL77sgoGCwtW0EnRPyy7CvIsszdBzl+SFoY7BtPNVeRcDufRsNQK+XEuHNrSITKyAOfRY8BGw9vGWwEGYwbNVNbfVDat0nsb6D3CWuYl7voJiaLVvy186kNUcJO4OfrAbYwAAA=">Lahore, Pakistan</b><span class="adl">227-CCA FF Block, DHA Phase IV</span></div>
       </div>
     </div>
     <div class="fbtm">
